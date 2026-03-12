@@ -1,0 +1,107 @@
+{
+  "workflow_name": "coze",
+  "round_id": "example-round",
+  "evidence_pack_ref": "collector/xhs_evidence_pack.json",
+  "knowledge_digest_ref": "knowledge_digest.json",
+  "platform_fit": {
+    "declared_path": "content-first workflow",
+    "why_this_platform": "Coze 适合把选题判断和内容结构化推理包成统一对话/工作流入口。",
+    "known_limits": [
+      "复杂回写和跨系统状态治理不如 Feishu/n8n 稳",
+      "需要警惕把平台便利误判成长期主承载"
+    ],
+    "non_fit_warning": ""
+  },
+  "topic_candidates": [
+    {
+      "candidate_id": "coze-1",
+      "title": "为什么大多数人做不好 AI 工作流，不是工具不行，是证据链没建起来",
+      "thesis": "把 AI 提效从工具话术翻成 evidence-first 流程。",
+      "claw_angle": "直接对应 CLAW 的 workflow-first 世界观。",
+      "evidence_refs": ["s-claw-recent-01", "s-agent-recent-01"],
+      "pattern_refs": ["pattern-1", "pattern-3"],
+      "risk_notes": ["要避免写成泛鸡汤。"]
+    },
+    {
+      "candidate_id": "coze-2",
+      "title": "Coze 适合做第一版，不适合做最后一版，这里面差的是哪一步",
+      "thesis": "把平台选型焦虑拆成阶段性承载问题。",
+      "claw_angle": "连接 workflow surface 赛马主线。",
+      "evidence_refs": ["s-dify-hot-01"],
+      "pattern_refs": ["pattern-2"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "coze-3",
+      "title": "OpenAI 一变，内容团队为什么要重做流程图",
+      "thesis": "借模型热点解释流程层变化。",
+      "claw_angle": "强调复杂流程要跟着模型能力重构。",
+      "evidence_refs": ["s-openai-hot-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "coze-4",
+      "title": "你不是缺一个 Agent，你是缺一条能复盘的工作流",
+      "thesis": "用反常识开头切内容生产问题。",
+      "claw_angle": "贴住 CLAW 的复盘和训练逻辑。",
+      "evidence_refs": ["s-agent-recent-01", "s-claw-recent-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "coze-5",
+      "title": "为什么 AI 内容团队最后都在补‘验真’这一步",
+      "thesis": "把效率焦虑转成验证纪律。",
+      "claw_angle": "符合 evidence-first 和 truth gate。",
+      "evidence_refs": ["s-openai-hot-01", "s-claw-recent-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    }
+  ],
+  "reasoned_ranking": [
+    {
+      "rank": 1,
+      "candidate_id": "coze-4",
+      "why_it_may_win": "反常识标题配流程视角，兼具冲突和收藏价值。",
+      "why_claw_can_own_it": "CLAW 天然能把‘Agent 幻觉’翻译成 workflow 原理。",
+      "evidence_refs": ["s-agent-recent-01", "s-claw-recent-01"],
+      "risk_notes": ["需要补具体流程例子。"]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "coze-2",
+      "why_it_may_win": "选型焦虑是强需求，边界判断容易被收藏。",
+      "why_claw_can_own_it": "你本来就在做 workflow surface 赛马。",
+      "evidence_refs": ["s-dify-hot-01"],
+      "risk_notes": []
+    },
+    {
+      "rank": 3,
+      "candidate_id": "coze-3",
+      "why_it_may_win": "借 OpenAI 热点切入，容易获得注意力。",
+      "why_claw_can_own_it": "CLAW 可以把热点翻成创业者真实流程影响。",
+      "evidence_refs": ["s-openai-hot-01"],
+      "risk_notes": ["别让内容变成单纯追新闻。"]
+    }
+  ],
+  "sample_post_plan": {
+    "selected_candidate_id": "coze-4",
+    "cover_hook": "你不是缺一个 Agent，你是缺一条能复盘的工作流",
+    "slide_outline": [
+      "第 1 页：多数人误把 Agent 当结果",
+      "第 2 页：真正卡住的是没有证据链和复盘点",
+      "第 3 页：拆出一条最小内容 workflow",
+      "第 4 页：告诉读者如何判断这条 workflow 值不值得继续跑"
+    ],
+    "cta": "评论区回复 workflow，继续拆你自己的复杂流程。",
+    "visual_notes": "图文风格偏架构图+流程节点，不做花哨贴纸。",
+    "negative_guards": ["不要写成空泛个人成长文。"]
+  },
+  "verification_plan": {
+    "success_signals": ["收藏率高于普通观点文", "评论里出现流程问题讨论"],
+    "failure_signals": ["只有点赞没有收藏", "评论集中在标题党而不是方法"],
+    "review_method": "首发后 48 小时查看收藏/评论结构，并人工抽样评论是否围绕 workflow。",
+    "follow_up_tasks": ["若收藏低，补一页实操模板。"]
+  }
+}

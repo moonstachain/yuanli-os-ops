@@ -1,0 +1,39 @@
+# DSL-ready blueprint for App B: 创作引擎
+# This is a modeling draft, not a claim of direct import compatibility.
+
+app:
+  name: "创作引擎"
+  mode: "workflow"
+  description: "把已选选题转成可拍脚本与平台文案。"
+
+workflow_blueprint:
+  inputs:
+    - selected_topic_brief
+    - content_preference_memory
+    - tone_constraints
+    - target_platforms
+  nodes:
+    - id: start
+      type: start
+    - id: story_core
+      type: llm
+      purpose: "找到最强故事核和戏剧张力"
+    - id: counterintuitive_insight
+      type: llm
+      purpose: "提炼真正有料的反认知点"
+    - id: force_claw_mapping
+      type: llm
+      purpose: "把揭示自然映射到原力创业"
+    - id: script_integrator
+      type: llm
+      purpose: "输出完整脚本包"
+    - id: copy_generator
+      type: llm
+      purpose: "生成小红书和视频号发布文案"
+    - id: package_output
+      type: template-transform
+      purpose: "输出 content_script_package"
+    - id: end
+      type: end
+      outputs:
+        - content_script_package

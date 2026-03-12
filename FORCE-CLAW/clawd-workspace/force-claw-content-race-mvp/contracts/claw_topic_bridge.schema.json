@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "claw_topic_bridge",
+  "type": "object",
+  "required": ["round_id", "generated_at", "fit_patterns", "avoid_patterns", "translation_rules"],
+  "properties": {
+    "round_id": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "fit_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pattern_id", "reason"],
+        "properties": {
+          "pattern_id": {"type": "string"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "avoid_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pattern_id", "reason"],
+        "properties": {
+          "pattern_id": {"type": "string"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "translation_rules": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "ok": true,
+  "run_id": "yuanli-audit-feishu-v1",
+  "mode": "apply",
+  "sync_scope": "internal",
+  "account_id": "feishu-claw",
+  "base_token": "IMQAbjNataZfgDsZTrfcXkghnhb",
+  "link": "https://h52xu4gwob.feishu.cn/wiki/DdNXw06poicDHHkSKIdcRrYDnod?from=from_copylink",
+  "tables": {
+    "审计批次": {
+      "primary_field": "Audit Run ID",
+      "actual_primary_field": "多行文本",
+      "row_count": 1,
+      "table_id": "tblNPJs6szJUggtN",
+      "ensure_table": {
+        "table_name": "审计批次",
+        "table_id": "tblNPJs6szJUggtN",
+        "primary_field": "Audit Run ID",
+        "existed": true,
+        "created": false,
+        "missing_fields": []
+      },
+      "preview": {
+        "would_create": 0,
+        "would_update": 1
+      },
+      "result": {
+        "created": 0,
+        "updated": 1
+      }
+    },
+    "评分卡总表": {
+      "primary_field": "Scorecard Key",
+      "actual_primary_field": "多行文本",
+      "row_count": 10,
+      "table_id": "tblQVcjmEzJIDHtI",
+      "ensure_table": {
+        "table_name": "评分卡总表",
+        "table_id": "tblQVcjmEzJIDHtI",
+        "primary_field": "Scorecard Key",
+        "existed": true,
+        "created": false,
+        "missing_fields": []
+      },
+      "preview": {
+        "would_create": 0,
+        "would_update": 10
+      },
+      "result": {
+        "created": 0,
+        "updated": 10
+      }
+    },
+    "检查点明细": {
+      "primary_field": "Checkpoint Key",
+      "actual_primary_field": "多行文本",
+      "row_count": 30,
+      "table_id": "tbl5QVoMvjpRYGkI",
+      "ensure_table": {
+        "table_name": "检查点明细",
+        "table_id": "tbl5QVoMvjpRYGkI",
+        "primary_field": "Checkpoint Key",
+        "existed": true,
+        "created": false,
+        "missing_fields": []
+      },
+      "preview": {
+        "would_create": 0,
+        "would_update": 30
+      },
+      "result": {
+        "created": 0,
+        "updated": 30
+      }
+    },
+    "扣分与差距": {
+      "primary_field": "Gap Key",
+      "actual_primary_field": "多行文本",
+      "row_count": 10,
+      "table_id": "tblmQjw35rOAZf6d",
+      "ensure_table": {
+        "table_name": "扣分与差距",
+        "table_id": "tblmQjw35rOAZf6d",
+        "primary_field": "Gap Key",
+        "existed": true,
+        "created": false,
+        "missing_fields": []
+      },
+      "preview": {
+        "would_create": 0,
+        "would_update": 10
+      },
+      "result": {
+        "created": 0,
+        "updated": 10
+      }
+    },
+    "进化动作": {
+      "primary_field": "Action Key",
+      "actual_primary_field": "多行文本",
+      "row_count": 12,
+      "table_id": "tblRM8lFQ7cmZoJ6",
+      "ensure_table": {
+        "table_name": "进化动作",
+        "table_id": "tblRM8lFQ7cmZoJ6",
+        "primary_field": "Action Key",
+        "existed": true,
+        "created": false,
+        "missing_fields": []
+      },
+      "preview": {
+        "would_create": 0,
+        "would_update": 12
+      },
+      "result": {
+        "created": 0,
+        "updated": 12
+      }
+    },
+    "内部证据": {
+      "primary_field": "Internal Evidence Key",
+      "actual_primary_field": "多行文本",
+      "row_count": 14,
+      "table_id": "tblkwGhClVgo57MN",
+      "ensure_table": {
+        "table_name": "内部证据",
+        "table_id": "tblkwGhClVgo57MN",
+        "primary_field": "Internal Evidence Key",
+        "existed": true,
+        "created": false,
+        "missing_fields": []
+      },
+      "preview": {
+        "would_create": 0,
+        "would_update": 14
+      },
+      "result": {
+        "created": 0,
+        "updated": 14
+      }
+    },
+    "外部情报": {
+      "primary_field": "External Intel Key",
+      "actual_primary_field": "多行文本",
+      "row_count": 6,
+      "table_id": "tblt2XlgZnSvqcEi",
+      "ensure_table": {
+        "table_name": "外部情报",
+        "table_id": "tblt2XlgZnSvqcEi",
+        "primary_field": "External Intel Key",
+        "existed": true,
+        "created": false,
+        "missing_fields": []
+      },
+      "preview": {
+        "would_create": 0,
+        "would_update": 6
+      },
+      "result": {
+        "created": 0,
+        "updated": 6
+      }
+    },
+    "对标映射": {
+      "primary_field": "Benchmark Link Key",
+      "actual_primary_field": "多行文本",
+      "row_count": 14,
+      "table_id": "tblaBz9rSKCzC88y",
+      "ensure_table": {
+        "table_name": "对标映射",
+        "table_id": "tblaBz9rSKCzC88y",
+        "primary_field": "Benchmark Link Key",
+        "existed": true,
+        "created": false,
+        "missing_fields": []
+      },
+      "preview": {
+        "would_create": 0,
+        "would_update": 14
+      },
+      "result": {
+        "created": 0,
+        "updated": 14
+      }
+    },
+    "递归队列": {
+      "primary_field": "Loop Key",
+      "actual_primary_field": "多行文本",
+      "row_count": 10,
+      "table_id": "tblvvE7PFx3saAyg",
+      "ensure_table": {
+        "table_name": "递归队列",
+        "table_id": "tblvvE7PFx3saAyg",
+        "primary_field": "Loop Key",
+        "existed": true,
+        "created": false,
+        "missing_fields": []
+      },
+      "preview": {
+        "would_create": 0,
+        "would_update": 10
+      },
+      "result": {
+        "created": 0,
+        "updated": 10
+      }
+    }
+  }
+}

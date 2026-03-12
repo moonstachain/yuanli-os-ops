@@ -1,0 +1,165 @@
+{
+  "ok": true,
+  "run_id": "yuanli-ops-bootstrap-check",
+  "mode": "dry-run",
+  "sync_scope": "internal",
+  "account_id": "feishu-claw",
+  "base_token": "",
+  "link": "https://h52xu4gwob.feishu.cn/wiki/DdNXw06poicDHHkSKIdcRrYDnod?from=from_copylink",
+  "tables": {
+    "审计批次": {
+      "primary_field": "Audit Run ID",
+      "actual_primary_field": "Audit Run ID",
+      "row_count": 1,
+      "table_id": "",
+      "ensure_table": {
+        "status": "preview_skipped_remote"
+      },
+      "preview": {
+        "would_create": 1,
+        "would_update": 0
+      },
+      "result": {
+        "created": 0,
+        "updated": 0
+      }
+    },
+    "评分卡总表": {
+      "primary_field": "Scorecard Key",
+      "actual_primary_field": "Scorecard Key",
+      "row_count": 10,
+      "table_id": "",
+      "ensure_table": {
+        "status": "preview_skipped_remote"
+      },
+      "preview": {
+        "would_create": 10,
+        "would_update": 0
+      },
+      "result": {
+        "created": 0,
+        "updated": 0
+      }
+    },
+    "检查点明细": {
+      "primary_field": "Checkpoint Key",
+      "actual_primary_field": "Checkpoint Key",
+      "row_count": 30,
+      "table_id": "",
+      "ensure_table": {
+        "status": "preview_skipped_remote"
+      },
+      "preview": {
+        "would_create": 30,
+        "would_update": 0
+      },
+      "result": {
+        "created": 0,
+        "updated": 0
+      }
+    },
+    "扣分与差距": {
+      "primary_field": "Gap Key",
+      "actual_primary_field": "Gap Key",
+      "row_count": 10,
+      "table_id": "",
+      "ensure_table": {
+        "status": "preview_skipped_remote"
+      },
+      "preview": {
+        "would_create": 10,
+        "would_update": 0
+      },
+      "result": {
+        "created": 0,
+        "updated": 0
+      }
+    },
+    "进化动作": {
+      "primary_field": "Action Key",
+      "actual_primary_field": "Action Key",
+      "row_count": 12,
+      "table_id": "",
+      "ensure_table": {
+        "status": "preview_skipped_remote"
+      },
+      "preview": {
+        "would_create": 12,
+        "would_update": 0
+      },
+      "result": {
+        "created": 0,
+        "updated": 0
+      }
+    },
+    "内部证据": {
+      "primary_field": "Internal Evidence Key",
+      "actual_primary_field": "Internal Evidence Key",
+      "row_count": 12,
+      "table_id": "",
+      "ensure_table": {
+        "status": "preview_skipped_remote"
+      },
+      "preview": {
+        "would_create": 12,
+        "would_update": 0
+      },
+      "result": {
+        "created": 0,
+        "updated": 0
+      }
+    },
+    "外部情报": {
+      "primary_field": "External Intel Key",
+      "actual_primary_field": "External Intel Key",
+      "row_count": 6,
+      "table_id": "",
+      "ensure_table": {
+        "status": "preview_skipped_remote"
+      },
+      "preview": {
+        "would_create": 6,
+        "would_update": 0
+      },
+      "result": {
+        "created": 0,
+        "updated": 0
+      }
+    },
+    "对标映射": {
+      "primary_field": "Benchmark Link Key",
+      "actual_primary_field": "Benchmark Link Key",
+      "row_count": 14,
+      "table_id": "",
+      "ensure_table": {
+        "status": "preview_skipped_remote"
+      },
+      "preview": {
+        "would_create": 14,
+        "would_update": 0
+      },
+      "result": {
+        "created": 0,
+        "updated": 0
+      }
+    },
+    "递归队列": {
+      "primary_field": "Loop Key",
+      "actual_primary_field": "Loop Key",
+      "row_count": 10,
+      "table_id": "",
+      "ensure_table": {
+        "status": "preview_skipped_remote"
+      },
+      "preview": {
+        "would_create": 10,
+        "would_update": 0
+      },
+      "result": {
+        "created": 0,
+        "updated": 0
+      }
+    }
+  },
+  "note": "Local preview only. Remote Feishu calls are skipped until --apply is used."
+}

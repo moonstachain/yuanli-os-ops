@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "viral_pattern_digest",
+  "type": "object",
+  "required": ["round_id", "generated_at", "patterns"],
+  "properties": {
+    "round_id": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "patterns": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["pattern_id", "label", "dimension", "count", "evidence_refs", "explanation"],
+        "properties": {
+          "pattern_id": {"type": "string"},
+          "label": {"type": "string"},
+          "dimension": {"type": "string"},
+          "count": {"type": "integer"},
+          "evidence_refs": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "explanation": {"type": "string"}
+        }
+      }
+    }
+  }
+}

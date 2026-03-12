@@ -1,0 +1,11 @@
+{
+  "round_id": "real-round-20260310-01",
+  "generated_at": "2026-03-10T12:08:30+08:00",
+  "collector_dir": "/Users/liming/AI Project/codex-force-claw/FORCE-CLAW/clawd-workspace/force-claw-content-race-mvp/runtime-artifacts/runs/real-round-20260310-01/collector",
+  "submission_workflows": [
+    "coze",
+    "dify",
+    "feishu",
+    "n8n"
+  ]
+}

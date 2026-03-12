@@ -1,0 +1,31 @@
+{
+  "workflow_name": "coze",
+  "round_id": "real-round-20260310-01",
+  "evidence_pack_ref": "collector/xhs_evidence_pack.json",
+  "knowledge_digest_ref": "knowledge_digest.json",
+  "platform_fit": {
+    "declared_path": "content-first workflow",
+    "why_this_platform": "Coze 适合把内容判断和交互式工作流组合成快速验证面。",
+    "known_limits": [
+      "复杂状态回写与长期主承载仍需额外验证",
+      "跨系统治理能力不应靠平台想象补齐"
+    ],
+    "non_fit_warning": ""
+  },
+  "topic_candidates": [],
+  "reasoned_ranking": [],
+  "sample_post_plan": {
+    "selected_candidate_id": "",
+    "cover_hook": "",
+    "slide_outline": [],
+    "cta": "",
+    "visual_notes": "",
+    "negative_guards": []
+  },
+  "verification_plan": {
+    "success_signals": [],
+    "failure_signals": [],
+    "review_method": "",
+    "follow_up_tasks": []
+  }
+}

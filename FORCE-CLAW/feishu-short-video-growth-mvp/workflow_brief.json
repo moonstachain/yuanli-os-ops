@@ -1,0 +1,57 @@
+{
+  "workflow_template": "short-video-growth",
+  "workflow_name": "原力创业短视频增长MVP",
+  "project_name": "feishu-short-video-growth-mvp",
+  "business_goal": "把短视频选题、研究、脚本、发布复盘和下一轮优化做成飞书里的可追踪闭环，服务视频号和小红书的单人运营。",
+  "initiator_role": "创始人/主理人",
+  "approver_roles": [],
+  "core_object": "独立 Base 中的 Bitable row + linked Doc",
+  "state_model": [
+    "captured",
+    "ranked",
+    "shortlisted",
+    "selected",
+    "researching",
+    "drafting",
+    "ready_for_publish",
+    "published",
+    "review_pending",
+    "reviewed",
+    "evolved"
+  ],
+  "notification_nodes": [
+    "shortlist_ready",
+    "selected_topic_created_draft",
+    "draft_stalled",
+    "publish_package_ready",
+    "review_overdue",
+    "evolution_rule_added"
+  ],
+  "cross_system": true,
+  "completion_evidence": [
+    "独立 Base 每轮展示 3 个 shortlisted topics",
+    "被选中的 topic 会生成 1 个 research-plus-script Doc",
+    "视频号和小红书各有一份 publish package",
+    "双平台指标进入 Performance Review",
+    "Feishu 视图或仪表盘可做 topic performance 对比",
+    "至少一条 evolution rule 会被写回到下轮筛选"
+  ],
+  "topic_ingest_mode": "scheduled-ai-plus-manual",
+  "topic_sources": [
+    "ai-hot-topic-source",
+    "manual-supplement"
+  ],
+  "platforms": [
+    "视频号",
+    "小红书"
+  ],
+  "creation_artifact": "research-plus-script",
+  "publish_mode": "semi-automatic-human-confirmed",
+  "analytics_mode": "semi-automatic-import",
+  "metrics_focus": [
+    "completion_rate",
+    "engagement_rate"
+  ],
+  "deployment_mode": "python-service",
+  "notes": "承载方式固定为新建独立 Base；当前飞书页面仅有访客读权限，编辑建表和应用配置需后续授权。"
+}

@@ -1,0 +1,208 @@
+{
+  "base_name": "原力OS审计系统",
+  "tables": [
+    {
+      "table_name": "审计批次",
+      "primary_field": "Audit Run ID",
+      "fields": [
+        "Audit Run ID",
+        "审计日期",
+        "审计范围",
+        "时间边界",
+        "mode",
+        "内部权重",
+        "外部权重",
+        "内部总分",
+        "外部总分",
+        "综合分",
+        "等级",
+        "最强区块",
+        "最弱区块",
+        "当前最大失真",
+        "状态",
+        "报告路径",
+        "同步结果"
+      ],
+      "views": [
+        "全部",
+        "系统总览"
+      ]
+    },
+    {
+      "table_name": "评分卡总表",
+      "primary_field": "Scorecard Key",
+      "fields": [
+        "Scorecard Key",
+        "Audit Run ID",
+        "Object Key",
+        "对象类型",
+        "对象名称",
+        "父对象",
+        "主题层分",
+        "策略层分",
+        "执行层分",
+        "递归进化分",
+        "全局最优分",
+        "人类友好分",
+        "内部成熟度",
+        "外部对标分",
+        "综合分",
+        "等级",
+        "关键扣分",
+        "下一步动作摘要"
+      ],
+      "views": [
+        "全部",
+        "子系统排行",
+        "扣分 Top"
+      ]
+    },
+    {
+      "table_name": "检查点明细",
+      "primary_field": "Checkpoint Key",
+      "fields": [
+        "Checkpoint Key",
+        "Audit Run ID",
+        "Object Key",
+        "轴名",
+        "检查点名",
+        "得分",
+        "状态",
+        "证据句",
+        "扣分原因",
+        "改进动作",
+        "证据键列表"
+      ],
+      "views": [
+        "全部"
+      ]
+    },
+    {
+      "table_name": "扣分与差距",
+      "primary_field": "Gap Key",
+      "fields": [
+        "Gap Key",
+        "Audit Run ID",
+        "Object Key",
+        "差距类型",
+        "来源层",
+        "严重度",
+        "当前状态",
+        "目标状态",
+        "阻塞原因",
+        "证据键",
+        "建议修复",
+        "状态"
+      ],
+      "views": [
+        "全部",
+        "外部对标缺口"
+      ]
+    },
+    {
+      "table_name": "进化动作",
+      "primary_field": "Action Key",
+      "fields": [
+        "Action Key",
+        "Audit Run ID",
+        "Gap Key",
+        "动作标题",
+        "动作类型",
+        "负责人",
+        "优先级",
+        "预期收益",
+        "投入等级",
+        "计划节奏",
+        "状态",
+        "闭环证据",
+        "关闭时间"
+      ],
+      "views": [
+        "全部",
+        "待进化动作"
+      ]
+    },
+    {
+      "table_name": "内部证据",
+      "primary_field": "Internal Evidence Key",
+      "fields": [
+        "Internal Evidence Key",
+        "Object Key",
+        "来源类型",
+        "来源路径",
+        "canonical 标记",
+        "时间戳",
+        "证据摘要",
+        "抽取结论",
+        "复用去向"
+      ],
+      "views": [
+        "全部"
+      ]
+    },
+    {
+      "table_name": "外部情报",
+      "primary_field": "External Intel Key",
+      "fields": [
+        "External Intel Key",
+        "主题/对象",
+        "来源类型",
+        "来源 URL",
+        "来源标题",
+        "权威级别",
+        "抓取日期",
+        "新鲜度",
+        "摘要",
+        "最佳实践结论",
+        "置信度",
+        "相关度"
+      ],
+      "views": [
+        "全部",
+        "外部情报过期"
+      ]
+    },
+    {
+      "table_name": "对标映射",
+      "primary_field": "Benchmark Link Key",
+      "fields": [
+        "Benchmark Link Key",
+        "External Intel Key",
+        "Object Key",
+        "权威性",
+        "相关性",
+        "新鲜度",
+        "可复用性",
+        "差距价值",
+        "外部对标分",
+        "本地差距说明",
+        "适配结论",
+        "状态"
+      ],
+      "views": [
+        "全部"
+      ]
+    },
+    {
+      "table_name": "递归队列",
+      "primary_field": "Loop Key",
+      "fields": [
+        "Loop Key",
+        "Object Key",
+        "复审节奏",
+        "触发类型",
+        "上次内部同步",
+        "上次外部同步",
+        "下次运行",
+        "过期标记",
+        "阻塞",
+        "分数变化",
+        "是否自动开 gap"
+      ],
+      "views": [
+        "全部",
+        "递归复审队列"
+      ]
+    }
+  ]
+}

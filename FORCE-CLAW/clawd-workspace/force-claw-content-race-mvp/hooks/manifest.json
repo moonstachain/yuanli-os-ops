@@ -1,0 +1,20 @@
+{
+  "hooks": [
+    {
+      "trigger": "session-start",
+      "file": "hooks/session-start.md"
+    },
+    {
+      "trigger": "major-execution-preflight",
+      "file": "hooks/major-execution-preflight.md"
+    },
+    {
+      "trigger": "pre-close-truth-gate",
+      "file": "hooks/pre-close-truth-gate.md"
+    },
+    {
+      "trigger": "post-close-promotion-review",
+      "file": "hooks/post-close-promotion-review.md"
+    }
+  ]
+}

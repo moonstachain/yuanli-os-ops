@@ -1,0 +1,30 @@
+{
+  "round_id": "example-round",
+  "generated_at": "2026-03-10T11:00:00+08:00",
+  "patterns": [
+    {
+      "pattern_id": "pattern-1",
+      "label": "认知升级",
+      "dimension": "hook_type",
+      "count": 2,
+      "evidence_refs": ["s-openai-hot-01", "s-claw-recent-01"],
+      "explanation": "先打破错误前提，再给出新框架，容易带来收藏和转述。"
+    },
+    {
+      "pattern_id": "pattern-2",
+      "label": "边界判断",
+      "dimension": "hook_type",
+      "count": 1,
+      "evidence_refs": ["s-dify-hot-01"],
+      "explanation": "把复杂选型问题说成人能做决策的边界判断。"
+    },
+    {
+      "pattern_id": "pattern-3",
+      "label": "避坑承诺",
+      "dimension": "promise_type",
+      "count": 2,
+      "evidence_refs": ["s-agent-recent-01", "s-dify-hot-01"],
+      "explanation": "明确告诉用户少踩坑，比单纯鼓励更容易产生收藏。"
+    }
+  ]
+}

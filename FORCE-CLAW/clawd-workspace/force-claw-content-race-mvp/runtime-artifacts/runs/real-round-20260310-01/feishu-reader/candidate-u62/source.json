@@ -1,0 +1,79 @@
+{
+  "page_type": "wiki",
+  "title": "北京奥德修斯教育科技有限公司",
+  "canonical_url": "https://h52xu4gwob.feishu.cn/wiki/U62qwHdJ4iQXWxkXiDhcoWVUnre?table=tblQA6tL1Y6BL3dD&view=vewybYyTXS",
+  "metadata": {
+    "document_title": "四大工作流的赛马机制 - 飞书云文档",
+    "meta_description": "",
+    "og_title": "",
+    "og_description": "",
+    "byline_candidates": [
+      "最新修改时间为03月10日"
+    ],
+    "top_lines": [
+      "北京奥德修斯教育科技有限公司",
+      "用户7581",
+      "四大工作流的赛马机制",
+      "最新修改时间为03月10日",
+      "立即编辑",
+      "登录/注册",
+      "数据表",
+      "仪表盘",
+      "新建",
+      "数据表",
+      "收集表",
+      "仪表盘",
+      "文档",
+      "文件夹",
+      "应用",
+      "表格",
+      "新建视图",
+      "添加记录",
+      "字段配置",
+      "视图配置",
+      "筛选",
+      "分组",
+      "排序",
+      "行高",
+      "填色",
+      "评论"
+    ],
+    "stats_candidates": [
+      "最新修改时间为03月10日",
+      "评论"
+    ]
+  },
+  "toc": [],
+  "text": "北京奥德修斯教育科技有限公司\n用户7581\n\n四大工作流的赛马机制\n\n最新修改时间为03月10日\n\n立即编辑\n登录/注册\n数据表\n仪表盘\n新建\n数据表\n收集表\n仪表盘\n文档\n文件夹\n应用\n表格\n新建视图\n添加记录\n字段配置\n视图配置\n筛选\n分组\n排序\n行高\n填色\n评论",
+  "visible_links": [],
+  "auth_mode_used": "dedicated_profile",
+  "screenshot_path": "/tmp/feishu-reader-u62-artifacts/feishu-page.png",
+  "buttons": [
+    {
+      "text": "立即编辑",
+      "kind": "button"
+    },
+    {
+      "text": "登录/注册",
+      "kind": "button"
+    }
+  ],
+  "probe": {
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://accounts.feishu.cn/accounts/page/login?app_id=2&no_trap=1&query_scope=all&redirect_uri=https%3A%2F%2Fh52xu4gwob.feishu.cn%2Fwiki%2FU62qwHdJ4iQXWxkXiDhcoWVUnre%3Ffrom%3Dfrom_copylink%26login_redirect_times%3D4",
+    "contentType": "text/html; charset=utf-8",
+    "loginLike": false,
+    "errorLike": false,
+    "bodyPreview": "<!doctype html> <html lang=\"zh-CN\" class=\"notranslate\" translate=\"no\" style=\"font-size:50px\"> <head> <meta name=\"suite-passport-compile-at\" content=\"2026-03-03 14:27:38.092\"> <meta name=\"suite-passport-commit-id\" content=\"bf887365183558bb621814df8ba1e42d13010138\"> <meta name=\"suite-passport-branch\" "
+  },
+  "status": "auth_required",
+  "artifacts": {
+    "json": "/tmp/feishu-reader-u62.json",
+    "markdown": "/tmp/feishu-reader-u62.md",
+    "screenshot": "/tmp/feishu-reader-u62-artifacts/feishu-page.png"
+  },
+  "notes": {
+    "profile_dir": "/private/tmp/state/browser-profile/feishu-reader"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-03-10T09:21:34+08:00",
+  "source_path": "FORCE-CLAW/feishu-short-video-growth-mvp/workflow-pack/short-video-growth/sample-topic-leads.json",
+  "topic_count": 3,
+  "shortlist": [
+    "一个人物故事揭示：为什么大多数创业者不是不努力，而是把力用错了地方",
+    "一个被所有人忽视的 AI 教学创业者，为何反而做出了更强的用户信任",
+    "一个冷门公司如何靠反常识的产品节奏，在 AI 浪潮里活下来"
+  ],
+  "topics": [
+    {
+      "title": "一个人物故事揭示：为什么大多数创业者不是不努力，而是把力用错了地方",
+      "source": "ai-hot-topic-source",
+      "reference": "https://example.com/topic/founder-force-misdirection",
+      "summary": "用人物转折故事解释原力创业里的方向感与结构性优势。",
+      "topic_tags": [
+        "创业",
+        "人物",
+        "原力"
+      ],
+      "trend_reason": "创业内容受众开始从方法论转向真实人物和命运转折。",
+      "captured_at": "2026-03-09T13:00:00+08:00",
+      "manual_note": "",
+      "curiosity_score": 9.3,
+      "substance_score": 8.7,
+      "relevance_score": 9.8,
+      "final_score": 9.29,
+      "status": "shortlisted"
+    },
+    {
+      "title": "一个被所有人忽视的 AI 教学创业者，为何反而做出了更强的用户信任",
+      "source": "ai-hot-topic-source",
+      "reference": "https://example.com/topic/ai-teaching-trust",
+      "summary": "围绕一个不追热度却持续被复购的 AI 教育创业案例，讨论慢变量和信任。",
+      "topic_tags": [
+        "AI",
+        "教育",
+        "创业"
+      ],
+      "trend_reason": "AI 创业者开始从工具炫技转向可信交付。",
+      "captured_at": "2026-03-09T09:00:00+08:00",
+      "manual_note": "",
+      "curiosity_score": 8.8,
+      "substance_score": 9.1,
+      "relevance_score": 9.5,
+      "final_score": 9.13,
+      "status": "shortlisted"
+    },
+    {
+      "title": "一个冷门公司如何靠反常识的产品节奏，在 AI 浪潮里活下来",
+      "source": "manual-supplement",
+      "reference": "https://example.com/topic/ai-product-rhythm",
+      "summary": "从公司节奏和组织节奏讲故事，强调不是更快，而是更准。",
+      "topic_tags": [
+        "AI",
+        "产品",
+        "组织"
+      ],
+      "trend_reason": "市场上对 AI 创业普遍误以为速度第一。",
+      "captured_at": "2026-03-09T11:00:00+08:00",
+      "manual_note": "",
+      "curiosity_score": 8.2,
+      "substance_score": 8.9,
+      "relevance_score": 9.0,
+      "final_score": 8.69,
+      "status": "shortlisted"
+    }
+  ]
+}

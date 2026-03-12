@@ -1,0 +1,25 @@
+{
+  "round_id": "example-round",
+  "generated_at": "2026-03-10T11:00:00+08:00",
+  "fit_patterns": [
+    {
+      "pattern_id": "pattern-1",
+      "reason": "认知升级和 CLAW 的原理导向天然兼容。"
+    },
+    {
+      "pattern_id": "pattern-2",
+      "reason": "边界判断适合讲 workflow 选型与复杂流程承载。"
+    }
+  ],
+  "avoid_patterns": [
+    {
+      "pattern_id": "pattern-3",
+      "reason": "避坑可以用，但不能只停在情绪式吓唬，必须补验证路径。"
+    }
+  ],
+  "translation_rules": [
+    "优先把热点转成流程原理，而不是平台八卦。",
+    "封面可以锋利，但正文必须给出最小可验证步骤。",
+    "避免纯工具清单，强调为什么 CLAW 能把复杂流程跑通。"
+  ]
+}

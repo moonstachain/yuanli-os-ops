@@ -1,0 +1,31 @@
+{
+  "bundle_name": "yuanli-os-ops",
+  "topology": {
+    "public_kernel_repos": [
+      "moonstachain/os-yuanli",
+      "moonstachain/ai-da-guan-jia"
+    ],
+    "private_ops_repo": "moonstachain/yuanli-os-ops",
+    "local_truth": "target machine canonical runtime state"
+  },
+  "included_groups": [
+    "总纲与定义",
+    "运行蓝图",
+    "审计与递归底座",
+    "内容与增长第一批样板",
+    "迁移启动清单",
+    "递归规则"
+  ],
+  "excluded_groups": [
+    "~/.codex full mirror",
+    "browser profile and auth storage",
+    "temporary runtime noise without stable contract",
+    "historical backup",
+    "unverified experiments"
+  ],
+  "primary_battlefield": "内容与增长",
+  "ops_surfaces": [
+    "GitHub",
+    "Feishu"
+  ]
+}

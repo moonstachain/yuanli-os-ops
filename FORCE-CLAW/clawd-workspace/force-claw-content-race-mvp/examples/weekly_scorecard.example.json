@@ -1,0 +1,111 @@
+{
+  "round_id": "example-round",
+  "generated_at": "2026-03-10T11:30:00+08:00",
+  "collector_score": {
+    "total": 85,
+    "breakdown": {
+      "evidence_authenticity": 27,
+      "sampling_coverage": 17,
+      "pattern_explanation": 16,
+      "claw_alignment": 12,
+      "downstream_utility": 13
+    },
+    "redlines": [],
+    "training_backlog": [
+      "补强 CLAW 邻近表达关键词池，降低对 OpenAI 关键词的集中度。",
+      "为每条样本增加截图缺失说明字段校验。"
+    ]
+  },
+  "workflow_scores": [
+    {
+      "workflow_name": "feishu",
+      "total": 88,
+      "breakdown": {
+        "evidence_usage": 18,
+        "topic_judgment": 18,
+        "translation_quality": 13,
+        "executability": 13,
+        "verification": 12,
+        "platform_fit": 14
+      },
+      "platform_fit_assessment": {
+        "declared_path": "knowledge-centric workflow",
+        "assessment_note": "Feishu 对知识库、状态回写和组织协同的解释最完整。"
+      },
+      "redlines": [],
+      "training_backlog": [
+        "下一轮给出更具体的页间视觉执行细节。"
+      ]
+    },
+    {
+      "workflow_name": "dify",
+      "total": 84,
+      "breakdown": {
+        "evidence_usage": 17,
+        "topic_judgment": 18,
+        "translation_quality": 13,
+        "executability": 12,
+        "verification": 12,
+        "platform_fit": 12
+      },
+      "platform_fit_assessment": {
+        "declared_path": "content-first workflow",
+        "assessment_note": "Dify 在研究和结构化内容验证上表现稳，但长期承载边界略弱。"
+      },
+      "redlines": [],
+      "training_backlog": [
+        "减少平台视角，增加 CLAW 自身世界观浓度。"
+      ]
+    },
+    {
+      "workflow_name": "coze",
+      "total": 82,
+      "breakdown": {
+        "evidence_usage": 17,
+        "topic_judgment": 17,
+        "translation_quality": 12,
+        "executability": 13,
+        "verification": 12,
+        "platform_fit": 11
+      },
+      "platform_fit_assessment": {
+        "declared_path": "content-first workflow",
+        "assessment_note": "Coze 在内容表达层有优势，但复杂状态治理和长期主承载仍需证明。"
+      },
+      "redlines": [],
+      "training_backlog": [
+        "下一轮提升 reasoning 对 evidence refs 的覆盖率。"
+      ]
+    },
+    {
+      "workflow_name": "n8n",
+      "total": 79,
+      "breakdown": {
+        "evidence_usage": 16,
+        "topic_judgment": 15,
+        "translation_quality": 11,
+        "executability": 11,
+        "verification": 11,
+        "platform_fit": 15
+      },
+      "platform_fit_assessment": {
+        "declared_path": "event/webhook orchestration",
+        "assessment_note": "n8n 最清楚地暴露了自动化平台边界，编排视角强，但内容脑力面仍偏弱。"
+      },
+      "redlines": [],
+      "training_backlog": [
+        "下一轮继续强化从自动化编排到内容主题判断的桥接表达。"
+      ]
+    }
+  ],
+  "selection_outlook": {
+    "leaderboard": ["feishu", "dify", "coze", "n8n"],
+    "current_leader": "feishu",
+    "notes": [
+      "Feishu 在知识库和闭环表达上最贴近当前主赛道。",
+      "Dify 在边界判断上表现稳定。",
+      "Coze 需要提高证据引用密度。",
+      "n8n 更像强编排底座，而不是内容脑力主面。"
+    ]
+  }
+}

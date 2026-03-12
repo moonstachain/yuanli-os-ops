@@ -1,0 +1,107 @@
+{
+  "workflow_name": "n8n",
+  "round_id": "example-round",
+  "evidence_pack_ref": "collector/xhs_evidence_pack.json",
+  "knowledge_digest_ref": "knowledge_digest.json",
+  "platform_fit": {
+    "declared_path": "event/webhook orchestration",
+    "why_this_platform": "n8n 适合把证据采集、标准化、回写、通知和多系统编排做成确定性自动化流程。",
+    "known_limits": [
+      "不适合把长链内容创作推理全部硬塞进一个自动化画布",
+      "内容判断层通常需要外部模型或人工评审节点配合"
+    ],
+    "non_fit_warning": "不适合单独承载整段内容脑力推理，但适合做共享采集、归一化、通知与回写编排。"
+  },
+  "topic_candidates": [
+    {
+      "candidate_id": "n8n-1",
+      "title": "真正能复用的不是爆款标题，而是你抓爆款的证据流水线",
+      "thesis": "把小红书爆款研究从人肉刷帖翻成可重复运行的证据采集流程。",
+      "claw_angle": "贴着共享采集层本身，符合 CLAW 的 evidence-first。",
+      "evidence_refs": ["s-openai-hot-01", "s-agent-recent-01", "s-claw-recent-01"],
+      "pattern_refs": ["pattern-1", "pattern-3"],
+      "risk_notes": ["别把自动化写成万灵药，要说明人工判断仍在。"]
+    },
+    {
+      "candidate_id": "n8n-2",
+      "title": "为什么内容团队最后拼的不是 Prompt，而是 webhook 和回写链路",
+      "thesis": "强调复杂流程落地时，真正值钱的是可重复触发和结果回写。",
+      "claw_angle": "呼应 workflow surface 赛马和闭环验证。",
+      "evidence_refs": ["s-agent-recent-01", "s-dify-hot-01"],
+      "pattern_refs": ["pattern-2"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "n8n-3",
+      "title": "OpenAI 再热，也替代不了你那条能自动复盘的内容链路",
+      "thesis": "用模型热点反衬基础设施的重要性。",
+      "claw_angle": "把热点转到底层流程能力，而不是追热点本身。",
+      "evidence_refs": ["s-openai-hot-01", "s-claw-recent-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "n8n-4",
+      "title": "你不是缺工具，而是缺一个会自己回写结果的工作流",
+      "thesis": "把‘提效’翻成状态管理和回写逻辑。",
+      "claw_angle": "强调 CLAW 选择核心 workflow surface 的真实目标。",
+      "evidence_refs": ["s-claw-recent-01", "s-agent-recent-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "n8n-5",
+      "title": "n8n 不是内容脑子，但它可能是内容系统的血管",
+      "thesis": "诚实暴露 n8n 边界，同时强调其编排价值。",
+      "claw_angle": "符合平台适配判断维度。",
+      "evidence_refs": ["s-dify-hot-01", "s-agent-recent-01"],
+      "pattern_refs": ["pattern-2"],
+      "risk_notes": ["需要避免让读者误解为纯技术文。"]
+    }
+  ],
+  "reasoned_ranking": [
+    {
+      "rank": 1,
+      "candidate_id": "n8n-1",
+      "why_it_may_win": "把‘爆款研究’从审美话题转成证据流水线，具备认知升级和收藏价值。",
+      "why_claw_can_own_it": "CLAW 正在把爆款采集前置成共享基础设施。",
+      "evidence_refs": ["s-openai-hot-01", "s-agent-recent-01", "s-claw-recent-01"],
+      "risk_notes": ["要补一页人工判断还在哪。"]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "n8n-5",
+      "why_it_may_win": "边界判断有反差，能让读者快速理解 n8n 的正确位置。",
+      "why_claw_can_own_it": "你本来就在做多平台承载边界赛马。",
+      "evidence_refs": ["s-dify-hot-01", "s-agent-recent-01"],
+      "risk_notes": []
+    },
+    {
+      "rank": 3,
+      "candidate_id": "n8n-4",
+      "why_it_may_win": "从‘工具’切到‘会回写结果的工作流’，更贴近团队真实痛点。",
+      "why_claw_can_own_it": "CLAW 的闭环标准就是结果回写和可验证。",
+      "evidence_refs": ["s-claw-recent-01", "s-agent-recent-01"],
+      "risk_notes": []
+    }
+  ],
+  "sample_post_plan": {
+    "selected_candidate_id": "n8n-1",
+    "cover_hook": "真正能复用的不是爆款标题，而是你抓爆款的证据流水线",
+    "slide_outline": [
+      "第 1 页：多数人做爆款研究还停在人肉刷帖",
+      "第 2 页：什么样的采集证据才算可复用",
+      "第 3 页：n8n 适合自动化哪几段，不适合哪几段",
+      "第 4 页：为什么最终你选的是核心 workflow surface，而不是单个工具"
+    ],
+    "cta": "收藏这套证据流水线框架，下轮我拆真实节点。",
+    "visual_notes": "流程图和状态流卡片为主，少用情绪化贴纸。",
+    "negative_guards": ["不要把 n8n 写成万能内容引擎。"]
+  },
+  "verification_plan": {
+    "success_signals": ["评论区出现流程节点和回写问题讨论", "收藏高于纯观点型内容"],
+    "failure_signals": ["评论集中在工具站队", "读者只记住 n8n 名字没记住证据流水线"],
+    "review_method": "观察 48 小时内评论是否复述出采集、归一化、回写三个动作。",
+    "follow_up_tasks": ["若偏技术向，下一篇补业务语言版。"]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "content_script_package",
+  "type": "object",
+  "required": [
+    "title_options",
+    "opening_hook",
+    "story_arc",
+    "key_reveals",
+    "final_force_claw_lesson",
+    "shot_beat_outline",
+    "xiaohongshu_copy",
+    "wechat_video_copy"
+  ],
+  "properties": {
+    "title_options": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 3
+    },
+    "opening_hook": { "type": "string" },
+    "story_arc": { "type": "string" },
+    "key_reveals": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "final_force_claw_lesson": { "type": "string" },
+    "shot_beat_outline": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "xiaohongshu_copy": { "type": "string" },
+    "wechat_video_copy": { "type": "string" }
+  }
+}

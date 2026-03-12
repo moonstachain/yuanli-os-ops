@@ -1,0 +1,107 @@
+{
+  "workflow_name": "feishu",
+  "round_id": "example-round",
+  "evidence_pack_ref": "collector/xhs_evidence_pack.json",
+  "knowledge_digest_ref": "knowledge_digest.json",
+  "platform_fit": {
+    "declared_path": "knowledge-centric workflow",
+    "why_this_platform": "Feishu 适合把知识库、表单、状态流和回写闭环放在一个组织级工作台里。",
+    "known_limits": [
+      "开放生态灵活度不如 n8n",
+      "某些复杂外部集成仍可能需要补脚本或 webhook"
+    ],
+    "non_fit_warning": ""
+  },
+  "topic_candidates": [
+    {
+      "candidate_id": "feishu-1",
+      "title": "真正有用的知识库，不是存资料，而是让工作流少失真",
+      "thesis": "知识库是降低工作流漂移的控制点。",
+      "claw_angle": "直接呼应飞书知识底座。",
+      "evidence_refs": ["s-openai-hot-01", "s-claw-recent-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "feishu-2",
+      "title": "飞书自动化为什么适合做内容闭环，而不是只做提醒",
+      "thesis": "把飞书从消息工具翻成流程承载面。",
+      "claw_angle": "贴着 Feishu workflow surface 的比赛任务。",
+      "evidence_refs": ["s-agent-recent-01"],
+      "pattern_refs": ["pattern-2"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "feishu-3",
+      "title": "一篇 AI 图文能不能复用，关键看你有没有把复盘写回知识库",
+      "thesis": "从发布回写讲闭环。",
+      "claw_angle": "非常适合讲 CLAW 的下一轮训练机制。",
+      "evidence_refs": ["s-claw-recent-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "feishu-4",
+      "title": "为什么说内容团队最后拼的不是 Prompt，而是数据回写能力",
+      "thesis": "强调状态契约和回写，而不是单次生成。",
+      "claw_angle": "对应 Feishu 的表单/多维表/状态流。",
+      "evidence_refs": ["s-agent-recent-01", "s-dify-hot-01"],
+      "pattern_refs": ["pattern-2"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "feishu-5",
+      "title": "你以为是在做内容，其实是在训练一条复杂流程",
+      "thesis": "把内容视为可训练流程，而不是单篇产物。",
+      "claw_angle": "最贴近 CLAW 的长期目标。",
+      "evidence_refs": ["s-claw-recent-01", "s-openai-hot-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    }
+  ],
+  "reasoned_ranking": [
+    {
+      "rank": 1,
+      "candidate_id": "feishu-5",
+      "why_it_may_win": "把内容生产重新定义成训练流程，认知升级明确。",
+      "why_claw_can_own_it": "CLAW 本来就在做复杂流程的核心调用面选择。",
+      "evidence_refs": ["s-claw-recent-01", "s-openai-hot-01"],
+      "risk_notes": []
+    },
+    {
+      "rank": 2,
+      "candidate_id": "feishu-1",
+      "why_it_may_win": "知识库和失真控制是很多团队的真实痛点。",
+      "why_claw_can_own_it": "你已经有固定飞书知识源。",
+      "evidence_refs": ["s-openai-hot-01", "s-claw-recent-01"],
+      "risk_notes": []
+    },
+    {
+      "rank": 3,
+      "candidate_id": "feishu-2",
+      "why_it_may_win": "把飞书从沟通工具翻成流程面，具备反差。",
+      "why_claw_can_own_it": "赛马对象里本来就有 Feishu workflow。",
+      "evidence_refs": ["s-agent-recent-01"],
+      "risk_notes": []
+    }
+  ],
+  "sample_post_plan": {
+    "selected_candidate_id": "feishu-5",
+    "cover_hook": "你以为是在做内容，其实是在训练一条复杂流程",
+    "slide_outline": [
+      "第 1 页：多数人把内容当一次性作品",
+      "第 2 页：真正值钱的是能被复用的流程节点",
+      "第 3 页：知识库、证据包、评分卡怎么串起来",
+      "第 4 页：为什么最后只会留下一个主 workflow surface"
+    ],
+    "cta": "如果你也在搭内容流程，收藏这套赛马框架。",
+    "visual_notes": "流程图 + 评分卡风格。",
+    "negative_guards": ["避免写成内部术语堆砌。"]
+  },
+  "verification_plan": {
+    "success_signals": ["收藏率高", "评论区出现 workflow 复用问题"],
+    "failure_signals": ["读者只记住概念，复述不出流程"],
+    "review_method": "检查评论是否提到知识库、证据包、评分卡三件套。",
+    "follow_up_tasks": ["如果抽象，下一篇补真实案例。"]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "round_id": "real-round-20260310-01",
+  "generated_at": "2026-03-10T19:17:51+08:00",
+  "status": "blocked_auth_or_access_gate",
+  "closure_state": "not_closed",
+  "blocked_stages": {
+    "knowledge_digest": {
+      "status": "blocked",
+      "reason": "candidate_feishu_source_auth_required",
+      "artifact": "FORCE-CLAW/clawd-workspace/force-claw-content-race-mvp/runtime-artifacts/runs/real-round-20260310-01/feishu-reader/knowledge_source_gate.json"
+    },
+    "xhs_collection": {
+      "status": "blocked",
+      "reason": "xiaohongshu_ip_risk_gate",
+      "artifact": "/Users/liming/AI Project/codex-force-claw/FORCE-CLAW/clawd-workspace/force-claw-content-race-mvp/runtime-artifacts/runs/real-round-20260310-01/collector/xhs_collection_gate.json"
+    },
+    "workflow_submissions": {
+      "status": "pending_shared_evidence",
+      "reason": "cannot_start_until_knowledge_and_evidence_exist"
+    },
+    "weekly_scorecard": {
+      "status": "pending_shared_evidence",
+      "reason": "score_requires_real_shared_inputs"
+    }
+  },
+  "completion_checks": {
+    "artifact_exists": false,
+    "goal_reached": false,
+    "boundary_safe": true,
+    "result_verified": true
+  },
+  "next_actions": [
+    "在专用 Feishu 登录窗口完成登录并重跑提取。",
+    "提取成功后，用 apply_knowledge_source.py 重建 knowledge_digest。",
+    "knowledge_digest ready 后，再推进 Xiaohongshu 采样。"
+  ]
+}

@@ -1,0 +1,38 @@
+# DSL-ready blueprint for App C: 闭环进化
+# This is a modeling draft, not a claim of direct import compatibility.
+
+app:
+  name: "闭环进化"
+  mode: "workflow"
+  description: "录入发布反馈后给出复盘建议和下一轮偏好更新。"
+
+workflow_blueprint:
+  inputs:
+    - feedback_record
+    - selected_topic_brief
+    - content_script_package
+    - content_preference_memory
+    - failure_pattern_memory
+  nodes:
+    - id: start
+      type: start
+    - id: normalize_metrics
+      type: code
+      purpose: "统一平台指标"
+    - id: diagnose_outcome
+      type: llm
+      purpose: "判断本轮表现强弱及主要原因"
+    - id: decompose_failure
+      type: llm
+      purpose: "区分选题问题、内容问题、平台匹配问题、标题开场问题、原力创业关联问题"
+    - id: reusable_insights
+      type: llm
+      purpose: "提炼下一轮仍可复用的规律"
+    - id: memory_update
+      type: template-transform
+      purpose: "输出下一轮偏好变量"
+    - id: end
+      type: end
+      outputs:
+        - feedback_analysis
+        - next_round_updates

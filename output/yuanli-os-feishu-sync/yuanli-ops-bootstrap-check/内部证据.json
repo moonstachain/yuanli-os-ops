@@ -1,0 +1,134 @@
+[
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::system::yuanli-os-system-audit-report-md",
+    "Object Key": "system",
+    "来源类型": "report",
+    "来源路径": "/Users/liming/AI Project/codex-force-claw/output/yuanli-os-ops-github-publish/yuanli-os-ops/FORCE-CLAW/YUANLI_OS_SYSTEM_AUDIT_REPORT.md",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-13 03:15:27",
+    "证据摘要": "当前系统总审计报告",
+    "抽取结论": "当前系统总分、子系统分、扣分账本和路线图都以该报告为主源。",
+    "复用去向": "评分卡总表,扣分与差距,进化动作"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::subsystem::theory-docs::yuanli-os-md",
+    "Object Key": "subsystem::theory-docs",
+    "来源类型": "doc",
+    "来源路径": "/Users/liming/AI Project/codex-force-claw/output/yuanli-os-ops-github-publish/yuanli-os-ops/FORCE-CLAW/YUANLI_OS.md",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-13 03:15:27",
+    "证据摘要": "原力OS 总纲",
+    "抽取结论": "定义治理OS与工作OS的总结构。",
+    "复用去向": "评分卡总表,内部证据"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::subsystem::theory-docs::yuanli-os-3x3-evolution-md",
+    "Object Key": "subsystem::theory-docs",
+    "来源类型": "doc",
+    "来源路径": "/Users/liming/AI Project/codex-force-claw/output/yuanli-os-ops-github-publish/yuanli-os-ops/FORCE-CLAW/YUANLI_OS_3X3_EVOLUTION.md",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-13 03:15:27",
+    "证据摘要": "3×3 二阶演化框架",
+    "抽取结论": "定义治理求解器、工作分类器与系统层级。",
+    "复用去向": "评分卡总表,内部证据"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::subsystem::theory-docs::yuanli-os-3x3-wechat-playbook-md",
+    "Object Key": "subsystem::theory-docs",
+    "来源类型": "doc",
+    "来源路径": "/Users/liming/AI Project/codex-force-claw/output/yuanli-os-ops-github-publish/yuanli-os-ops/FORCE-CLAW/YUANLI_OS_3X3_WECHAT_PLAYBOOK.md",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-13 03:15:27",
+    "证据摘要": "公众号实战应用说明书",
+    "抽取结论": "把三层方法落到高频内容任务。",
+    "复用去向": "领域证明层,内部证据"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::subsystem::root-entry::skill-md",
+    "Object Key": "subsystem::root-entry",
+    "来源类型": "skill",
+    "来源路径": "/Users/liming/.codex/skills/os-yuanli/SKILL.md",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-13 01:27:10",
+    "证据摘要": "OS-原力 root skill",
+    "抽取结论": "规定六判断、三层 gate、验真与进化顺序。",
+    "复用去向": "根层协议与总入口层,评分卡总表"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::subsystem::root-entry::task-family-map-md",
+    "Object Key": "subsystem::root-entry",
+    "来源类型": "reference",
+    "来源路径": "/Users/liming/.codex/skills/os-yuanli/references/task-family-map.md",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-13 01:27:10",
+    "证据摘要": "任务族映射",
+    "抽取结论": "定义研究审计与治理协作的高阶混合模式。",
+    "复用去向": "根层协议与总入口层,递归队列"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::system::audit-rubric-md",
+    "Object Key": "system",
+    "来源类型": "reference",
+    "来源路径": "/Users/liming/.codex/skills/os-yuanli/references/audit-rubric.md",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-13 00:51:25",
+    "证据摘要": "审计评分标准",
+    "抽取结论": "6 轴 × 10 分模型是系统审计的固定评分器。",
+    "复用去向": "检查点明细,评分卡总表"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::system::system-audit-playbook-md",
+    "Object Key": "system",
+    "来源类型": "reference",
+    "来源路径": "/Users/liming/.codex/skills/os-yuanli/references/system-audit-playbook.md",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-13 01:27:10",
+    "证据摘要": "系统行为审计 playbook",
+    "抽取结论": "规定 Inquiry Brief 到 Evolution Note 的高阶审计路径。",
+    "复用去向": "审计批次,进化动作"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::sample::content-race-short-video::round-status-json",
+    "Object Key": "sample::content-race-short-video",
+    "来源类型": "experiment",
+    "来源路径": "/Users/liming/AI Project/codex-force-claw/output/yuanli-os-ops-github-publish/yuanli-os-ops/FORCE-CLAW/clawd-workspace/force-claw-content-race-mvp/runtime-artifacts/runs/real-round-20260310-01/round_status.json",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-10 19:17:51",
+    "证据摘要": "内容赛马状态",
+    "抽取结论": "显示 blocked_auth_or_access_gate 与 not_closed 的真实阻塞。",
+    "复用去向": "扣分与差距,递归队列"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::sample::content-race-short-video::full-run-summary-json",
+    "Object Key": "sample::content-race-short-video",
+    "来源类型": "experiment",
+    "来源路径": "/Users/liming/AI Project/codex-force-claw/output/yuanli-os-ops-github-publish/yuanli-os-ops/FORCE-CLAW/feishu-short-video-growth-mvp/runtime-artifacts/state/full_run_summary.json",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-13 03:19:35",
+    "证据摘要": "短视频增长实验状态",
+    "抽取结论": "领域证明层的实验类证据样本。",
+    "复用去向": "领域证明层,评分卡总表"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::subsystem::skill-ecology::review-md",
+    "Object Key": "subsystem::skill-ecology",
+    "来源类型": "review",
+    "来源路径": "/Users/liming/.codex/skills/ai-da-guan-jia/artifacts/ai-da-guan-jia/reviews/2026-03-12/adagj-review-20260312-220318/review.md",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-12 22:03:21",
+    "证据摘要": "AI大管家 review.md",
+    "抽取结论": "技能树强弱区块、中层缺口与候选动作都以 review 为主源。",
+    "复用去向": "skill 生态层,扣分与差距"
+  },
+  {
+    "Internal Evidence Key": "yuanli-ops-bootstrap-check::subsystem::skill-ecology::review-json",
+    "Object Key": "subsystem::skill-ecology",
+    "来源类型": "review",
+    "来源路径": "/Users/liming/.codex/skills/ai-da-guan-jia/artifacts/ai-da-guan-jia/reviews/2026-03-12/adagj-review-20260312-220318/review.json",
+    "canonical 标记": "yes",
+    "时间戳": "2026-03-12 22:03:21",
+    "证据摘要": "AI大管家 review.json",
+    "抽取结论": "供结构化读取 normalized skills 与 findings。",
+    "复用去向": "skill 生态层,内部证据"
+  }
+]

@@ -1,0 +1,32 @@
+# DSL-ready blueprint for App D: 主编排
+# This is a modeling draft, not a claim of direct import compatibility.
+
+app:
+  name: "内容主编排"
+  mode: "workflow"
+  description: "串联选题雷达、创作引擎、闭环进化，维护每轮内容状态。"
+
+workflow_blueprint:
+  inputs:
+    - run_id
+    - operator_name
+    - time_window
+    - seed_keywords
+    - blocked_topics
+    - content_preference_memory
+    - failure_pattern_memory
+  state_machine:
+    - radar-generated
+    - topic-selected
+    - script-generated
+    - published-manually
+    - feedback-recorded
+    - evolved
+  orchestration:
+    - step: "call topic-radar"
+    - step: "wait for human selection"
+    - step: "call creative-engine"
+    - step: "wait for manual publish"
+    - step: "accept feedback input"
+    - step: "call feedback-evolution"
+    - step: "update next-round memory"

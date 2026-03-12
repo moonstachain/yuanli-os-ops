@@ -1,0 +1,107 @@
+{
+  "workflow_name": "dify",
+  "round_id": "example-round",
+  "evidence_pack_ref": "collector/xhs_evidence_pack.json",
+  "knowledge_digest_ref": "knowledge_digest.json",
+  "platform_fit": {
+    "declared_path": "content-first workflow",
+    "why_this_platform": "Dify 适合把研究、结构化输出和阶段性 workflow 快速拼起来验证。",
+    "known_limits": [
+      "长期主系统承载边界需要额外验证",
+      "复杂状态回写和强治理能力仍可能依赖外部系统"
+    ],
+    "non_fit_warning": ""
+  },
+  "topic_candidates": [
+    {
+      "candidate_id": "dify-1",
+      "title": "Dify 真正适合的不是万能系统，而是第一版验证场",
+      "thesis": "把 Dify 放回验证和结构化试错位置。",
+      "claw_angle": "和 workflow 赛马的阶段判断强相关。",
+      "evidence_refs": ["s-dify-hot-01"],
+      "pattern_refs": ["pattern-2"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "dify-2",
+      "title": "OpenAI 一升级，你的 Dify Flow 为什么也要跟着重排",
+      "thesis": "模型升级会改变 workflow 节点设计。",
+      "claw_angle": "把热点拉回复杂流程。",
+      "evidence_refs": ["s-openai-hot-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "dify-3",
+      "title": "别再追 Agent 神话了，先看你有没有一条能验真的工作流",
+      "thesis": "反常识 + 验真纪律。",
+      "claw_angle": "贴住 CLAW 的 truth gate。",
+      "evidence_refs": ["s-agent-recent-01", "s-claw-recent-01"],
+      "pattern_refs": ["pattern-1", "pattern-3"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "dify-4",
+      "title": "为什么内容团队最后都回到知识库，而不是更复杂的 Prompt",
+      "thesis": "知识库是稳定流程输入，不是高级附件。",
+      "claw_angle": "连接飞书知识源和 workflow 主线。",
+      "evidence_refs": ["s-openai-hot-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    },
+    {
+      "candidate_id": "dify-5",
+      "title": "AI 提效真正该提的是哪一步：选题、研究、复盘，还是验真",
+      "thesis": "做流程拆解式对比。",
+      "claw_angle": "适合用 CLAW 的四件套输入。",
+      "evidence_refs": ["s-claw-recent-01", "s-agent-recent-01"],
+      "pattern_refs": ["pattern-1"],
+      "risk_notes": []
+    }
+  ],
+  "reasoned_ranking": [
+    {
+      "rank": 1,
+      "candidate_id": "dify-1",
+      "why_it_may_win": "边界判断非常适合做收藏型图文。",
+      "why_claw_can_own_it": "你正在做的就是平台承载边界评测。",
+      "evidence_refs": ["s-dify-hot-01"],
+      "risk_notes": []
+    },
+    {
+      "rank": 2,
+      "candidate_id": "dify-3",
+      "why_it_may_win": "反常识标题容易出点击，正文如果补流程会出收藏。",
+      "why_claw_can_own_it": "CLAW 可以提供真实 truth gate 语境。",
+      "evidence_refs": ["s-agent-recent-01", "s-claw-recent-01"],
+      "risk_notes": []
+    },
+    {
+      "rank": 3,
+      "candidate_id": "dify-5",
+      "why_it_may_win": "读者能直接对号入座自己卡在哪一步。",
+      "why_claw_can_own_it": "CLAW 本身就是流程拆解框架。",
+      "evidence_refs": ["s-claw-recent-01"],
+      "risk_notes": []
+    }
+  ],
+  "sample_post_plan": {
+    "selected_candidate_id": "dify-1",
+    "cover_hook": "Dify 适合做第一版，不适合做最后一版",
+    "slide_outline": [
+      "第 1 页：很多人把平台当最终系统",
+      "第 2 页：第一版要的其实是验证速度",
+      "第 3 页：最后一版要的是承载边界和回写闭环",
+      "第 4 页：CLAW 为什么要做赛马而不是押注单一神话"
+    ],
+    "cta": "收藏这张选型表，后面我继续拆 Coze / Feishu。",
+    "visual_notes": "信息图风格，突出阶段判断。",
+    "negative_guards": ["不要把 Dify 写成贬低文。"]
+  },
+  "verification_plan": {
+    "success_signals": ["评论区出现选型咨询", "收藏高于平均水平"],
+    "failure_signals": ["争论集中在站队而不是边界理解"],
+    "review_method": "48 小时内看评论是否能复述‘第一版/最后一版’结构。",
+    "follow_up_tasks": ["若误解多，补一期图解版。"]
+  }
+}

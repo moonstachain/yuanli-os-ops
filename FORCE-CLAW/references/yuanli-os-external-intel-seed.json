@@ -1,0 +1,243 @@
+{
+  "generated_on": "2026-03-13",
+  "weighting": {
+    "internal": 0.7,
+    "external": 0.3
+  },
+  "sources": [
+    {
+      "external_intel_key": "openai-agents-best-practices-2026-03",
+      "topic_or_object": "system",
+      "source_type": "official_docs",
+      "source_url": "https://platform.openai.com/docs/guides/agents/best-practices",
+      "source_title": "Agents - OpenAI API",
+      "authority_level": "high",
+      "captured_on": "2026-03-13",
+      "summary": "OpenAI把工作流设计、部署和优化放在同一条链里，强调 build, deploy, optimize 的统一闭环。",
+      "best_practice_conclusion": "多阶段 agent 系统要同时具备工作流编排、可观测评估和持续优化接口，而不是只有执行链。",
+      "confidence": "0.90",
+      "relevance": "root_skill,runtime,benchmark"
+    },
+    {
+      "external_intel_key": "openai-evaluation-best-practices-2026-03",
+      "topic_or_object": "system",
+      "source_type": "official_docs",
+      "source_url": "https://platform.openai.com/docs/guides/evaluation-best-practices",
+      "source_title": "Evaluation best practices - OpenAI API",
+      "authority_level": "high",
+      "captured_on": "2026-03-13",
+      "summary": "OpenAI明确要求评估要贴近真实任务分布，并通过 evals 做持续测量，而不是一次性主观判断。",
+      "best_practice_conclusion": "原力OS 的系统审计应把 scorecard 与真实任务验证绑定，持续追踪而不是单次写结论。",
+      "confidence": "0.90",
+      "relevance": "evals,recursion,audit"
+    },
+    {
+      "external_intel_key": "openai-agent-builder-2026-03",
+      "topic_or_object": "theory-docs",
+      "source_type": "official_docs",
+      "source_url": "https://platform.openai.com/docs/guides/agent-builder",
+      "source_title": "Agent Builder - OpenAI API",
+      "authority_level": "high",
+      "captured_on": "2026-03-13",
+      "summary": "Agent Builder 强调 workflow object、typed inputs/outputs 和节点间的数据契约。",
+      "best_practice_conclusion": "原力OS 的任务层级需要更硬的 typed contract，尤其是 runtime canonical 字段和跨层 handoff。",
+      "confidence": "0.88",
+      "relevance": "workflow,contracts,typed_edges"
+    },
+    {
+      "external_intel_key": "openai-agents-sdk-2026-03",
+      "topic_or_object": "root-entry",
+      "source_type": "official_docs",
+      "source_url": "https://platform.openai.com/docs/guides/agents-sdk",
+      "source_title": "Agents SDK - OpenAI API",
+      "authority_level": "high",
+      "captured_on": "2026-03-13",
+      "summary": "Agents SDK 把 handoff、tool use、trace 保留在同一套 agent runtime 里。",
+      "best_practice_conclusion": "总入口层要区分 method kernel 与 execution organs，同时把 trace 留下来，不靠口头解释。",
+      "confidence": "0.86",
+      "relevance": "handoff,trace,root-entry"
+    },
+    {
+      "external_intel_key": "anthropic-agent-sdk-2026-03",
+      "topic_or_object": "root-entry",
+      "source_type": "official_blog",
+      "source_url": "https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk/",
+      "source_title": "Building agents with the Claude Agent SDK",
+      "authority_level": "high",
+      "captured_on": "2026-03-13",
+      "summary": "Anthropic 把 agent harness 的通用能力抽离成 SDK，并强调 best practices 来源于真实部署。",
+      "best_practice_conclusion": "原力OS 应继续把方法论沉成可复用器官，而不是停留在概念文档层。",
+      "confidence": "0.84",
+      "relevance": "best_practices,agent_harness,writeback"
+    },
+    {
+      "external_intel_key": "langgraph-github-2026-03",
+      "topic_or_object": "runtime",
+      "source_type": "github_repo",
+      "source_url": "https://github.com/langchain-ai/langgraph",
+      "source_title": "langchain-ai/langgraph",
+      "authority_level": "high",
+      "captured_on": "2026-03-13",
+      "summary": "LangGraph 把 durable execution、human-in-the-loop、memory、debugging 和 deployment 放在同一个 stateful workflow 框架里。",
+      "best_practice_conclusion": "原力OS 的 runtime canonical 字段和递归闭环需要继续向 durable state 与 traceability 靠拢。",
+      "confidence": "0.87",
+      "relevance": "durable_execution,memory,observability"
+    }
+  ],
+  "mappings": [
+    {
+      "external_intel_key": "openai-agents-best-practices-2026-03",
+      "object_key": "system",
+      "authority": 10,
+      "relevance": 9,
+      "reuse": 9,
+      "gap_value": 9,
+      "local_gap": "系统已经有治理和执行骨架，但优化环还未完全变成常规器官。",
+      "adaptation": "把评分、evidence gate、递归队列变成固定运行件。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "openai-evaluation-best-practices-2026-03",
+      "object_key": "system",
+      "authority": 10,
+      "relevance": 10,
+      "reuse": 8,
+      "gap_value": 10,
+      "local_gap": "系统审计已建立，但还要进一步把结果绑定到实际任务复审和对比。",
+      "adaptation": "让 scorecard 与 recurring audit 成为标准流程。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "langgraph-github-2026-03",
+      "object_key": "system",
+      "authority": 9,
+      "relevance": 8,
+      "reuse": 8,
+      "gap_value": 9,
+      "local_gap": "runtime state 已有证据链，但 durable execution 和标准 trace 还不够强。",
+      "adaptation": "收紧 ledger 字段与 loop state，增强重跑与恢复能力。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "openai-agent-builder-2026-03",
+      "object_key": "subsystem::theory-docs",
+      "authority": 10,
+      "relevance": 8,
+      "reuse": 8,
+      "gap_value": 8,
+      "local_gap": "理论层很强，但 typed workflow contract 还没有完全进入运行对象。",
+      "adaptation": "补 typed inputs/outputs 思路到 task ledger 和 scorecard。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "openai-evaluation-best-practices-2026-03",
+      "object_key": "subsystem::theory-docs",
+      "authority": 10,
+      "relevance": 8,
+      "reuse": 9,
+      "gap_value": 8,
+      "local_gap": "文档层知道要评估，但评估设计还没完全操作化。",
+      "adaptation": "继续把审计 Rubric 绑定到固定脚本和 recurring run。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "openai-agents-sdk-2026-03",
+      "object_key": "subsystem::root-entry",
+      "authority": 10,
+      "relevance": 9,
+      "reuse": 8,
+      "gap_value": 9,
+      "local_gap": "总入口边界已写清，但互操作 trace 仍不足。",
+      "adaptation": "把 handoff 与 trace 保留成显式 state，而不是靠文档解释。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "anthropic-agent-sdk-2026-03",
+      "object_key": "subsystem::root-entry",
+      "authority": 9,
+      "relevance": 8,
+      "reuse": 8,
+      "gap_value": 8,
+      "local_gap": "方法论沉淀成 root skill 了，但器官级 writeback 仍在早期。",
+      "adaptation": "继续让 OS-原力 把高频协议写回 references 和 sync script。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "openai-agents-best-practices-2026-03",
+      "object_key": "subsystem::skill-ecology",
+      "authority": 10,
+      "relevance": 7,
+      "reuse": 8,
+      "gap_value": 8,
+      "local_gap": "skill 数量多，但 build/deploy/optimize 的统一结构不够硬。",
+      "adaptation": "先补中层交通和 hardening，再扩 skill 面。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "anthropic-agent-sdk-2026-03",
+      "object_key": "subsystem::skill-ecology",
+      "authority": 9,
+      "relevance": 7,
+      "reuse": 8,
+      "gap_value": 8,
+      "local_gap": "复用器官已经有了，但 skill tree 交通规则仍偏弱。",
+      "adaptation": "优先沉淀 routing-playbook 和 dedupe 规则。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "langgraph-github-2026-03",
+      "object_key": "subsystem::runtime-behavior",
+      "authority": 9,
+      "relevance": 10,
+      "reuse": 9,
+      "gap_value": 10,
+      "local_gap": "运行行为已有证据，但 canonical fields 还没把真相完整接住。",
+      "adaptation": "强化 lane、surface、verification_status、loop state。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "openai-agent-builder-2026-03",
+      "object_key": "subsystem::runtime-behavior",
+      "authority": 10,
+      "relevance": 8,
+      "reuse": 8,
+      "gap_value": 9,
+      "local_gap": "运行对象仍欠缺 typed node contract 和 handoff discipline。",
+      "adaptation": "给 task 和 run 统一 typed field 和 verify target。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "openai-evaluation-best-practices-2026-03",
+      "object_key": "subsystem::runtime-behavior",
+      "authority": 10,
+      "relevance": 9,
+      "reuse": 8,
+      "gap_value": 10,
+      "local_gap": "verification 已多，但 system-level eval 还没有常态化。",
+      "adaptation": "把 verification 和 scorecard 绑定成持续机制。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "openai-agent-builder-2026-03",
+      "object_key": "subsystem::domain-proof",
+      "authority": 10,
+      "relevance": 7,
+      "reuse": 7,
+      "gap_value": 7,
+      "local_gap": "公众号链证明力强，但其他领域证明链还不均匀。",
+      "adaptation": "复制强链路模式到第二条业务链。",
+      "status": "active"
+    },
+    {
+      "external_intel_key": "langgraph-github-2026-03",
+      "object_key": "subsystem::domain-proof",
+      "authority": 9,
+      "relevance": 7,
+      "reuse": 8,
+      "gap_value": 8,
+      "local_gap": "领域实验仍有 not_closed 和 access gate。",
+      "adaptation": "给实验流加 durable state 和可重跑机制。",
+      "status": "active"
+    }
+  ]
+}

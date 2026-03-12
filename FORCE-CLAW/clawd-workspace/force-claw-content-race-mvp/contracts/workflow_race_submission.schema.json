@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "workflow_race_submission",
+  "type": "object",
+  "required": [
+    "workflow_name",
+    "round_id",
+    "evidence_pack_ref",
+    "platform_fit",
+    "topic_candidates",
+    "reasoned_ranking",
+    "sample_post_plan",
+    "verification_plan"
+  ],
+  "properties": {
+    "workflow_name": {"type": "string"},
+    "round_id": {"type": "string"},
+    "evidence_pack_ref": {"type": "string"},
+    "knowledge_digest_ref": {"type": "string"},
+    "platform_fit": {
+      "type": "object",
+      "required": [
+        "declared_path",
+        "why_this_platform",
+        "known_limits",
+        "non_fit_warning"
+      ],
+      "properties": {
+        "declared_path": {"type": "string"},
+        "why_this_platform": {"type": "string"},
+        "known_limits": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "non_fit_warning": {"type": "string"}
+      }
+    },
+    "topic_candidates": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "title", "thesis", "claw_angle", "evidence_refs", "pattern_refs"],
+        "properties": {
+          "candidate_id": {"type": "string"},
+          "title": {"type": "string"},
+          "thesis": {"type": "string"},
+          "claw_angle": {"type": "string"},
+          "evidence_refs": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "pattern_refs": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "risk_notes": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        }
+      }
+    },
+    "reasoned_ranking": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["rank", "candidate_id", "why_it_may_win", "why_claw_can_own_it", "evidence_refs"],
+        "properties": {
+          "rank": {"type": "integer"},
+          "candidate_id": {"type": "string"},
+          "why_it_may_win": {"type": "string"},
+          "why_claw_can_own_it": {"type": "string"},
+          "evidence_refs": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "risk_notes": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        }
+      }
+    },
+    "sample_post_plan": {
+      "type": "object",
+      "required": ["selected_candidate_id", "cover_hook", "slide_outline", "cta", "visual_notes"],
+      "properties": {
+        "selected_candidate_id": {"type": "string"},
+        "cover_hook": {"type": "string"},
+        "slide_outline": {
+          "type": "array",
+          "minItems": 3,
+          "items": {"type": "string"}
+        },
+        "cta": {"type": "string"},
+        "visual_notes": {"type": "string"},
+        "negative_guards": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "verification_plan": {
+      "type": "object",
+      "required": ["success_signals", "failure_signals", "review_method"],
+      "properties": {
+        "success_signals": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "failure_signals": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "review_method": {"type": "string"},
+        "follow_up_tasks": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    }
+  }
+}

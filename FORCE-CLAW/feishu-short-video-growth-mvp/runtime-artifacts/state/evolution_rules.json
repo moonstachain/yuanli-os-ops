@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-03-10T09:21:34+08:00",
+  "rule_count": 2,
+  "rules": [
+    {
+      "draft_id": "draft-001",
+      "platform": "视频号",
+      "rule_statement": "人物转折类内容优先用冲突先行的开头",
+      "rule_type": "story",
+      "evidence_strength": "single-review",
+      "metadata": {
+        "repeat": "保留人物转折 + 反常识揭示",
+        "avoid": "开头不要铺背景过长"
+      }
+    },
+    {
+      "draft_id": "draft-001",
+      "platform": "小红书",
+      "rule_statement": "小红书更适合先给反认知结论再讲故事",
+      "rule_type": "story",
+      "evidence_strength": "single-review",
+      "metadata": {
+        "repeat": "保留猎奇人物 + 反认知标题",
+        "avoid": "避免封面信息过密"
+      }
+    }
+  ]
+}

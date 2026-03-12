@@ -1,0 +1,62 @@
+{
+  "round_id": "real-round-20260310-01",
+  "generated_at": "2026-03-10T19:17:51+08:00",
+  "controller": "ai-da-guan-jia",
+  "task_status": "blocked_auth_or_access_gate",
+  "phase": "feishu_knowledge_source_gate",
+  "assessment": {
+    "summary": "结构完成，真实闭环未完成",
+    "strengths": [
+      "没有伪完成，阻塞被真实留证",
+      "工作区分层清楚，后续可继续推进"
+    ],
+    "problems": [
+      "真实 round 仍卡在共享证据层，当前还不能算赛马已开始"
+    ]
+  },
+  "completed": [
+    "content-race-mvp 工作区骨架已成立",
+    "四方赛马 runner 已可跑通 example regression",
+    "real-round-20260310-01 已创建并留下 canonical 阻塞记录",
+    "恢复脚本已补齐，可在拿到新知识源后直接继续推进"
+  ],
+  "unfinished": [
+    "真实 knowledge_digest",
+    "真实 xhs_evidence_pack",
+    "四个 workflow 的真实 submission",
+    "真实 weekly_scorecard"
+  ],
+  "main_distortion": "把已经命中新知识源候选但仍需登录验证的状态，误判成还没有可用候选 URL。",
+  "most_important_next_action": "在专用 Feishu 浏览器窗口完成登录并重跑提取",
+  "supervision_mode": "全程督办",
+  "knowledge_source_policy": "不允许临时替代知识源",
+  "pending_human_input": [
+    "在专用 Feishu 登录窗口完成登录"
+  ],
+  "blocked_stages": [
+    {
+      "stage": "knowledge_digest",
+      "status": "blocked",
+      "reason": "candidate_feishu_source_auth_required",
+      "artifact": "FORCE-CLAW/clawd-workspace/force-claw-content-race-mvp/runtime-artifacts/runs/real-round-20260310-01/feishu-reader/knowledge_source_gate.json"
+    },
+    {
+      "stage": "xhs_collection",
+      "status": "blocked",
+      "reason": "xiaohongshu_ip_risk_gate",
+      "artifact": "/Users/liming/AI Project/codex-force-claw/FORCE-CLAW/clawd-workspace/force-claw-content-race-mvp/runtime-artifacts/runs/real-round-20260310-01/collector/xhs_collection_gate.json"
+    },
+    {
+      "stage": "workflow_submissions",
+      "status": "pending_shared_evidence",
+      "reason": "cannot_start_until_knowledge_and_evidence_exist",
+      "artifact": ""
+    },
+    {
+      "stage": "weekly_scorecard",
+      "status": "pending_shared_evidence",
+      "reason": "score_requires_real_shared_inputs",
+      "artifact": ""
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "topic_candidate",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "headline",
+    "story_angle",
+    "novelty_signal",
+    "evidence_links",
+    "force_claw_relevance_score",
+    "selection_reason"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "source": { "type": "string" },
+    "headline": { "type": "string" },
+    "story_angle": { "type": "string" },
+    "novelty_signal": { "type": "string" },
+    "evidence_links": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "force_claw_relevance_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10
+    },
+    "selection_reason": { "type": "string" }
+  }
+}

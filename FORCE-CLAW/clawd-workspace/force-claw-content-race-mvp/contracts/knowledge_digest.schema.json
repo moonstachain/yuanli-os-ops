@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "knowledge_digest",
+  "type": "object",
+  "required": [
+    "source_url",
+    "captured_at",
+    "brand_truths",
+    "principle_cards",
+    "audience_jobs",
+    "banned_angles",
+    "language_notes"
+  ],
+  "properties": {
+    "source_url": {
+      "type": "string"
+    },
+    "captured_at": {
+      "type": "string"
+    },
+    "brand_truths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "principle_cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "summary"],
+        "properties": {
+          "id": {"type": "string"},
+          "title": {"type": "string"},
+          "summary": {"type": "string"}
+        }
+      },
+      "minItems": 1
+    },
+    "audience_jobs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "banned_angles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "language_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

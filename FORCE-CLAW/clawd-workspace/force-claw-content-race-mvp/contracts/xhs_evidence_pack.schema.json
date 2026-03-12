@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "xhs_evidence_pack",
+  "type": "object",
+  "required": [
+    "round_id",
+    "generated_at",
+    "query_buckets",
+    "coverage",
+    "samples",
+    "negative_notes"
+  ],
+  "properties": {
+    "round_id": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "query_buckets": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["sample_count", "surfaces"],
+      "properties": {
+        "sample_count": {"type": "integer"},
+        "surfaces": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "author_concentration": {"type": "number"},
+        "query_concentration": {"type": "number"}
+      }
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sample_id",
+          "capture_time",
+          "bucket",
+          "query",
+          "surface",
+          "post_url",
+          "author",
+          "published_at",
+          "title",
+          "visible_engagement",
+          "tags",
+          "screenshots",
+          "topic_relevance",
+          "hook_type",
+          "promise_type",
+          "format_type",
+          "emotion_or_identity_lever",
+          "why_it_may_win"
+        ],
+        "properties": {
+          "sample_id": {"type": "string"},
+          "capture_time": {"type": "string"},
+          "bucket": {"type": "string"},
+          "query": {"type": "string"},
+          "surface": {"type": "string"},
+          "post_url": {"type": "string"},
+          "post_id": {"type": "string"},
+          "author": {"type": "string"},
+          "published_at": {"type": "string"},
+          "title": {"type": "string"},
+          "cover_text": {"type": "string"},
+          "visible_engagement": {
+            "type": "object"
+          },
+          "tags": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "screenshots": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "topic_relevance": {"type": "string"},
+          "hook_type": {"type": "string"},
+          "promise_type": {"type": "string"},
+          "format_type": {"type": "string"},
+          "emotion_or_identity_lever": {"type": "string"},
+          "why_it_may_win": {"type": "string"},
+          "negative_note": {"type": "string"}
+        }
+      }
+    },
+    "negative_notes": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

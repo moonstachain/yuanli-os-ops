@@ -1,0 +1,38 @@
+{
+  "round_id": "real-round-20260310-01",
+  "generated_at": "2026-03-10T18:31:00+08:00",
+  "source_url": "https://h52xu4gwob.feishu.cn/wiki/UCFJwrGYJiOk52k1NYFcPkIon9b",
+  "status": "auth_required_candidate",
+  "evidence": [
+    {
+      "method": "curl_public_probe",
+      "observed_at": "2026-03-10T12:44:29+08:00",
+      "http_status": 404,
+      "summary": "固定飞书 URL 直接访问返回 404，公开可读路径未打通。"
+    },
+    {
+      "method": "chrome_profile_attempt",
+      "observed_at": "2026-03-10T12:44:29+08:00",
+      "status": "failed",
+      "summary": "复用本机 Chrome profile 时命中 ProcessSingleton，无法安全接管现有浏览器会话。"
+    },
+    {
+      "method": "feishu_reader_dedicated_profile_probe",
+      "observed_at": "2026-03-10T18:31:00+08:00",
+      "status": "auth_required",
+      "source_url": "https://h52xu4gwob.feishu.cn/wiki/U62qwHdJ4iQXWxkXiDhcoWVUnre?from=from_copylink",
+      "canonical_url": "https://h52xu4gwob.feishu.cn/wiki/U62qwHdJ4iQXWxkXiDhcoWVUnre?table=tblQA6tL1Y6BL3dD&view=vewybYyTXS",
+      "document_title": "四大工作流的赛马机制 - 飞书云文档",
+      "summary": "新候选知识源已命中有效页面语义，但当前专用 profile 未登录，提取状态为 auth_required。",
+      "artifact_json": "/Users/liming/AI Project/codex-force-claw/FORCE-CLAW/clawd-workspace/force-claw-content-race-mvp/runtime-artifacts/runs/real-round-20260310-01/feishu-reader/candidate-u62/source.json",
+      "artifact_markdown": "/Users/liming/AI Project/codex-force-claw/FORCE-CLAW/clawd-workspace/force-claw-content-race-mvp/runtime-artifacts/runs/real-round-20260310-01/feishu-reader/candidate-u62/source.md",
+      "artifact_screenshot": "/Users/liming/AI Project/codex-force-claw/FORCE-CLAW/clawd-workspace/force-claw-content-race-mvp/runtime-artifacts/runs/real-round-20260310-01/feishu-reader/candidate-u62/feishu-page.png"
+    }
+  ],
+  "next_actions": [
+    "在专用 Feishu 登录窗口完成登录，再用同一 profile 重跑提取。",
+    "若登录后提取 status=ok，再用 apply_knowledge_source.py 重建 knowledge_digest。",
+    "若登录后仍非 ok，则把该链接记为第二次知识源失败候选。"
+  ],
+  "current_candidate_url": "https://h52xu4gwob.feishu.cn/wiki/U62qwHdJ4iQXWxkXiDhcoWVUnre?from=from_copylink"
+}

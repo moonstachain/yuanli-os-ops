@@ -1,0 +1,32 @@
+{
+  "source_url": "https://h52xu4gwob.feishu.cn/wiki/UCFJwrGYJiOk52k1NYFcPkIon9b",
+  "captured_at": "2026-03-10T09:00:00+08:00",
+  "brand_truths": [
+    "CLAW 不是泛 AI 工具集合，而是 evidence-first 的创业运行时。",
+    "内容必须贴着原理、流程和真实验证，而不是空泛热词。"
+  ],
+  "principle_cards": [
+    {
+      "id": "p-1",
+      "title": "证据优先",
+      "summary": "任何高价值判断都要先看真实产物和可验证状态。"
+    },
+    {
+      "id": "p-2",
+      "title": "工作流优先",
+      "summary": "重点不是单次爆文，而是能被重复调用的复杂流程。"
+    }
+  ],
+  "audience_jobs": [
+    "想把复杂内容流程沉淀为可复用工作流的主理人",
+    "想知道 AI 工具和 workflow 怎样真正落地的人"
+  ],
+  "banned_angles": [
+    "空泛鸡血",
+    "没有证据的夸张收益承诺"
+  ],
+  "language_notes": [
+    "用具体场景和流程解释，不写通用 AI 套话。",
+    "允许锋利，但不能失真。"
+  ]
+}

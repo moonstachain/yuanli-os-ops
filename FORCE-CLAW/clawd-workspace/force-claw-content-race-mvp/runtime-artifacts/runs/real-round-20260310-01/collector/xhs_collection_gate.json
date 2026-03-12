@@ -1,0 +1,18 @@
+{
+  "round_id": "real-round-20260310-01",
+  "generated_at": "2026-03-10T12:44:29+08:00",
+  "query": "OpenAI",
+  "surface": "public_search",
+  "status": "ip_risk_gate",
+  "evidence": {
+    "page_title": "安全限制",
+    "error_code": "300012",
+    "http_status": 461,
+    "summary": "小红书公开搜索页返回 IP 存在风险，请切换可靠网络环境后重试。",
+    "observed_url": "https://www.xiaohongshu.com/website-login/error?appId=xhs-pc-web&redirectPath=https://www.xiaohongshu.com/search_result?keyword=OpenAI&source=web_explore_feed&type=51&httpStatus=461&verifyType=400"
+  },
+  "next_actions": [
+    "切换到可靠网络环境后重试小红书公开搜索采样。",
+    "优先在人工可见浏览器中完成首轮采样，确认不是当前出口 IP 被封。"
+  ]
+}

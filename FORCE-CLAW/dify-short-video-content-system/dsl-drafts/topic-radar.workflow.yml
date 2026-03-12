@@ -1,0 +1,46 @@
+# DSL-ready blueprint for App A: 选题雷达
+# This is a modeling draft, not a claim of direct import compatibility.
+
+app:
+  name: "选题雷达"
+  mode: "workflow"
+  description: "从 X 和海外 AI 媒体汇总热点，筛出 3 个可选短视频选题。"
+
+workflow_blueprint:
+  inputs:
+    - time_window
+    - seed_keywords
+    - blocked_topics
+    - content_preference_memory
+    - failure_pattern_memory
+    - source_payloads
+  nodes:
+    - id: start
+      type: start
+      outputs:
+        - source_payloads
+        - content_preference_memory
+        - failure_pattern_memory
+    - id: normalize_sources
+      type: code
+      purpose: "统一字段并清洗噪声"
+    - id: extract_story_angle
+      type: llm
+      purpose: "提炼每条热点最值得讲的故事角度"
+    - id: extract_novelty
+      type: llm
+      purpose: "识别反认知或猎奇信号"
+    - id: score_force_claw_link
+      type: llm
+      purpose: "评估与原力创业的相关性"
+    - id: rank_candidates
+      type: code
+      purpose: "按故事张力、反认知价值、原力创业相关性排序"
+    - id: output_top3
+      type: template-transform
+      purpose: "输出 3 个 topic_candidate"
+    - id: end
+      type: end
+      outputs:
+        - topic_candidates
+        - radar_summary

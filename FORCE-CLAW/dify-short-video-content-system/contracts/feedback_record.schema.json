@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "feedback_record",
+  "type": "object",
+  "required": [
+    "topic_id",
+    "platform",
+    "publish_time",
+    "views",
+    "likes",
+    "comments",
+    "saves_or_favorites",
+    "completion_or_watch_quality",
+    "operator_notes",
+    "suggested_next_adjustments"
+  ],
+  "properties": {
+    "topic_id": { "type": "string" },
+    "platform": { "type": "string" },
+    "publish_time": { "type": "string" },
+    "views": { "type": "number" },
+    "likes": { "type": "number" },
+    "comments": { "type": "number" },
+    "saves_or_favorites": { "type": "number" },
+    "completion_or_watch_quality": { "type": "string" },
+    "operator_notes": { "type": "string" },
+    "suggested_next_adjustments": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

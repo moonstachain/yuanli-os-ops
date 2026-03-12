@@ -1,0 +1,27 @@
+{
+  "sample_id": "replace-me",
+  "capture_time": "2026-03-10T10:00:00+08:00",
+  "bucket": "OpenAI/模型热点",
+  "query": "OpenAI",
+  "surface": "hot",
+  "post_url": "https://www.xiaohongshu.com/explore/example",
+  "post_id": "optional",
+  "author": "example-author",
+  "published_at": "2026-03-09",
+  "title": "示例标题",
+  "cover_text": "示例封面文案",
+  "visible_engagement": {
+    "likes": "unknown",
+    "comments": "unknown",
+    "collects": "unknown"
+  },
+  "tags": ["AI"],
+  "screenshots": ["collector/screenshots/example.png"],
+  "topic_relevance": "与 CLAW/AI 赛道的相关性说明",
+  "hook_type": "认知升级",
+  "promise_type": "效率承诺",
+  "format_type": "清单",
+  "emotion_or_identity_lever": "不想落后",
+  "why_it_may_win": "一句解释为什么可能跑出来",
+  "negative_note": ""
+}

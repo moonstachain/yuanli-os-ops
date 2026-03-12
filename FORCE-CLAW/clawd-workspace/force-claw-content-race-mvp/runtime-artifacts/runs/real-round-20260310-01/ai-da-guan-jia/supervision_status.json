@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-03-10T19:17:51+08:00",
+  "round_id": "real-round-20260310-01",
+  "controller": "ai-da-guan-jia",
+  "supervision_mode": "全程督办",
+  "knowledge_source_policy": "不允许临时替代知识源",
+  "status": "blocked_auth_or_access_gate",
+  "closure_state": "not_closed",
+  "current_phase": "feishu_knowledge_source_gate",
+  "gate_order": [
+    "feishu_knowledge_source_gate",
+    "xhs_sampling_gate",
+    "workflow_submission_gate",
+    "scorecard_gate",
+    "post_scorecard_closure_gate"
+  ],
+  "next_transition": "knowledge_digest_ready",
+  "ready_to_advance": false,
+  "canonical_sync": {
+    "feishu_mirror": "deferred_until_real_weekly_scorecard",
+    "github_governance": "deferred_until_real_weekly_scorecard",
+    "full_evolution_run": "deferred_until_real_weekly_scorecard"
+  },
+  "pending_human_input": [
+    "在专用 Feishu 登录窗口完成登录"
+  ],
+  "enforced_rules": [
+    "不允许临时替代知识源",
+    "共享证据缺失时不得提前做 Feishu/GitHub mirror",
+    "不得把 example regression 说成真实闭环"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "workflow_name": "dify",
+  "round_id": "real-round-20260310-01",
+  "evidence_pack_ref": "collector/xhs_evidence_pack.json",
+  "knowledge_digest_ref": "knowledge_digest.json",
+  "platform_fit": {
+    "declared_path": "content-first workflow",
+    "why_this_platform": "Dify 适合把研究、结构化生成和阶段性 workflow 快速拼装起来验证。",
+    "known_limits": [
+      "长期主系统承载边界需要额外验证",
+      "复杂状态治理仍可能依赖外部系统"
+    ],
+    "non_fit_warning": ""
+  },
+  "topic_candidates": [],
+  "reasoned_ranking": [],
+  "sample_post_plan": {
+    "selected_candidate_id": "",
+    "cover_hook": "",
+    "slide_outline": [],
+    "cta": "",
+    "visual_notes": "",
+    "negative_guards": []
+  },
+  "verification_plan": {
+    "success_signals": [],
+    "failure_signals": [],
+    "review_method": "",
+    "follow_up_tasks": []
+  }
+}

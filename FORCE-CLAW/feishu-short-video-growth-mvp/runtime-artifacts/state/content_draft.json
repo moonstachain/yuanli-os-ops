@@ -1,0 +1,58 @@
+{
+  "draft_id": "draft-topic-5c1a41de38",
+  "topic_title": "一个人物故事揭示：为什么大多数创业者不是不努力，而是把力用错了地方",
+  "title": "一个人物故事揭示：为什么大多数创业者不是不努力，而是把力用错了地方",
+  "summary": "用人物转折故事解释原力创业里的方向感与结构性优势。",
+  "story_angle": "用人物转折故事解释原力创业里的方向感与结构性优势。",
+  "anti_consensus_insight": "创业内容受众开始从方法论转向真实人物和命运转折。",
+  "original_evidence_clues": "https://example.com/topic/founder-force-misdirection",
+  "hook": "为什么一个人物故事揭示：为什么大多数创业者不是不努力",
+  "story_arc": "人物/事件切入 -> 冲突升级 -> 反认知揭示 -> 回收至原力创业",
+  "key_beats": [
+    "开场给冲突",
+    "补一个猎奇细节",
+    "揭示被忽视的结构性原因",
+    "回收到原力创业相关性"
+  ],
+  "payoff": "把表层热闹翻译成底层判断力",
+  "force_tie_back": "把故事中的结构优势、慢变量或判断偏差自然回收至原力创业。",
+  "platforms": [
+    "视频号",
+    "小红书"
+  ],
+  "title_options": [
+    "一个人物故事揭示：为什么大多数创业者不是不努力，而是把力用错了地方",
+    "为什么一个人物故事揭示：为什么大多数创业者不是不努力",
+    "一个人物故事揭示：为什么大多数创业者不是不努力，给创业者的一记反常识提醒"
+  ],
+  "tags": [
+    "创业",
+    "人物",
+    "原力"
+  ],
+  "cover_prompt": "人物故事感，强冲突，突出关键词：创业",
+  "suggested_publish_time": "20:00",
+  "status": "drafting",
+  "doc_url": "FORCE-CLAW/feishu-short-video-growth-mvp/runtime-artifacts/docs/draft-topic-5c1a41de38.md",
+  "draft_status": "researching",
+  "generated_at": "2026-03-10T09:21:34+08:00",
+  "source_topic": {
+    "title": "一个人物故事揭示：为什么大多数创业者不是不努力，而是把力用错了地方",
+    "source": "ai-hot-topic-source",
+    "reference": "https://example.com/topic/founder-force-misdirection",
+    "summary": "用人物转折故事解释原力创业里的方向感与结构性优势。",
+    "topic_tags": [
+      "创业",
+      "人物",
+      "原力"
+    ],
+    "trend_reason": "创业内容受众开始从方法论转向真实人物和命运转折。",
+    "captured_at": "2026-03-09T13:00:00+08:00",
+    "manual_note": "",
+    "curiosity_score": 9.3,
+    "substance_score": 8.7,
+    "relevance_score": 9.8,
+    "final_score": 9.29,
+    "status": "shortlisted"
+  }
+}

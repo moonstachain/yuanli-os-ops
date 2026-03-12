@@ -1,0 +1,35 @@
+{
+  "query_buckets": [
+    {
+      "bucket": "OpenAI/模型热点",
+      "keywords": [
+        "OpenAI",
+        "ChatGPT",
+        "Agent"
+      ]
+    },
+    {
+      "bucket": "AI 工作流/工具链",
+      "keywords": [
+        "工作流",
+        "Coze",
+        "Dify",
+        "飞书自动化",
+        "知识库",
+        "AI 提效"
+      ]
+    },
+    {
+      "bucket": "CLAW 邻近表达",
+      "keywords": [
+        "CLAW",
+        "小龙虾 AI"
+      ]
+    }
+  ],
+  "surfaces": [
+    "hot",
+    "recent"
+  ],
+  "per_query_target": 2
+}

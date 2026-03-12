@@ -1,0 +1,17 @@
+{
+  "workflow_template": "short-video-growth",
+  "platforms": [
+    "视频号",
+    "小红书"
+  ],
+  "metrics_focus": [
+    "completion_rate",
+    "engagement_rate"
+  ],
+  "topic_sources": [
+    "ai-hot-topic-source",
+    "manual-supplement"
+  ],
+  "publish_mode": "semi-automatic-human-confirmed",
+  "analytics_mode": "semi-automatic-import"
+}
