@@ -49,3 +49,14 @@ Only for:
   - what route is selected
   - what verification target applies
   - what reusable evolution was captured
+
+## Dual-Machine Cutover Model
+
+- old machine
+  - rollback point
+  - training ground
+  - emergency fallback for missing auth or unexpected gaps
+- new M5 machine
+  - first-wave production machine
+  - primary battlefield for `内容与增长`
+  - target canonical environment after the `1-2` week overlap window
