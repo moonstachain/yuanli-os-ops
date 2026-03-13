@@ -11,6 +11,8 @@ It is not the public method kernel. It is the portable runtime bundle for rebuil
   - `ai-da-guan-jia`
 - `私有运行层`
   - this repository
+- `私有技能包`
+  - `yuanli-os-skills-pack`
 - `目标机本地态`
   - auth, browser state, caches, environment variables, and local canonical task traces
 
@@ -21,7 +23,7 @@ It is not the public method kernel. It is the portable runtime bundle for rebuil
 - `tools/feishu-bitable-bridge/`
   - the minimal bridge needed by the Feishu audit sync stack
 - `bootstrap/`
-  - target-machine bootstrap contract, environment checklist, connection order, collaboration protocol, and health checks
+  - target-machine bootstrap contract, remote-control runbook, skills manifest, environment checklist, connection order, collaboration protocol, and health-check contracts
 - `scripts/`
   - repository-level bundle verification
 
@@ -36,8 +38,9 @@ It is not the public method kernel. It is the portable runtime bundle for rebuil
 
 1. restore `AI大管家`
 2. restore `OS-原力`
-3. restore the `内容与增长` chain
-4. restore the `研究与审计` chain
-5. restore the Feishu audit landing path
+3. restore the private method organs from `yuanli-os-skills-pack`
+4. restore the `内容与增长` chain
+5. restore the `研究与审计` chain
+6. restore the Feishu audit landing path
 
 Read [bootstrap/BOOTSTRAP_CONTRACT.md](bootstrap/BOOTSTRAP_CONTRACT.md) first.
