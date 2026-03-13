@@ -1,14 +1,17 @@
 # Connection Order
 
-1. Clone `os-yuanli`, `ai-da-guan-jia`, and `yuanli-os-ops`.
-2. Restore `ai-da-guan-jia` into `$CODEX_HOME/skills/ai-da-guan-jia`.
-3. Restore `os-yuanli` into `$CODEX_HOME/skills/os-yuanli`.
-4. Restore the first-wave domain skills for `内容与增长`.
-5. Confirm GitHub auth.
-6. Confirm Feishu internal-app credentials in `~/.openclaw/openclaw.json`.
-7. Run the internal audit dry-run.
-8. Run one content smoke task.
-9. Only after the local loop is stable, enable repeated Feishu audit sync and recursive review cadence.
+1. On the new Mac, enable `Remote Login` and `Screen Sharing`.
+2. Confirm the new Mac is reachable over the LAN by hostname or static IP.
+3. Clone `os-yuanli`, `ai-da-guan-jia`, `yuanli-os-ops`, and `yuanli-os-skills-pack`.
+4. Restore `ai-da-guan-jia` into `$CODEX_HOME/skills/ai-da-guan-jia`.
+5. Restore `os-yuanli` into `$CODEX_HOME/skills/os-yuanli`.
+6. Run `python3 ../yuanli-os-skills-pack/scripts/install_skills_pack.py --codex-home "${CODEX_HOME:-$HOME/.codex}"`.
+7. Restore the public first-wave skills from `moonstachain/feishu-reader`, `moonstachain/openai-docs`, `moonstachain/pdf`, `moonstachain/spreadsheet`, and `moonstachain/wechat-article-writer`.
+8. Confirm GitHub auth.
+9. Confirm Feishu internal-app credentials in `~/.openclaw/openclaw.json`.
+10. Run the remote, bundle, audit, and content checks from `HEALTHCHECK_CONTRACT.md`.
+11. Run one content smoke task.
+12. Only after the local loop is stable, enable repeated Feishu audit sync and recursive review cadence.
 
 ## Default External Responsibilities
 
