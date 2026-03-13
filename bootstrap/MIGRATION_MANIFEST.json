@@ -6,6 +6,7 @@
       "moonstachain/ai-da-guan-jia"
     ],
     "private_ops_repo": "moonstachain/yuanli-os-ops",
+    "private_skills_repo": "moonstachain/yuanli-os-skills-pack",
     "local_truth": "target machine canonical runtime state"
   },
   "included_groups": [
@@ -14,7 +15,9 @@
     "审计与递归底座",
     "内容与增长第一批样板",
     "迁移启动清单",
-    "递归规则"
+    "递归规则",
+    "远控 runbook",
+    "skills manifest"
   ],
   "excluded_groups": [
     "~/.codex full mirror",
@@ -27,5 +30,10 @@
   "ops_surfaces": [
     "GitHub",
     "Feishu"
-  ]
+  ],
+  "remote_control": {
+    "primary": "SSH",
+    "secondary": "Screen Sharing",
+    "fallback": "physical login"
+  }
 }
