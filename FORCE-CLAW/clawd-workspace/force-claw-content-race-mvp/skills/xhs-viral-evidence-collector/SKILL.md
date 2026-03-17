@@ -1,6 +1,10 @@
 ---
 name: xhs-viral-evidence-collector
-description: 用于 `CLAW/AI` 内容赛马前置层的小红书爆款采集与归因。适用于需要从小红书公开页和已登录辅助页面科学采样图文热点、去重、做最小归因标注、产出统一 evidence pack 与 claw_topic_bridge 的场景。
+description: >
+  小红书爆款内容采集与归因分析，用于内容赛马前置层。从小红书公开页采集爆款帖，
+  提取传播模式、标签策略和互动数据。当用户说"小红书爆款"、"采集小红书"、
+  "内容赛马"、"爆款分析"、"小红书研究"时使用。
+  NOT for 公众号写作（用 wechat-article-writer）。
 ---
 
 # xhs-viral-evidence-collector
