@@ -52,14 +52,24 @@ def write_json_stdout(payload: dict[str, Any]) -> None:
 
 
 def load_feishu_account(account_id: str) -> dict[str, str]:
-    config = read_json(OPENCLAW_CONFIG)
-    accounts = (((config.get("channels") or {}).get("feishu") or {}).get("accounts") or {})
-    account = accounts.get(account_id) or {}
-    app_id = str(account.get("appId") or "").strip()
-    app_secret = str(account.get("appSecret") or "").strip()
-    if not app_id or not app_secret:
-        raise RuntimeError(f"Missing Feishu account credentials for accountId={account_id}")
-    return {"app_id": app_id, "app_secret": app_secret}
+    if OPENCLAW_CONFIG.exists():
+        config = read_json(OPENCLAW_CONFIG)
+        accounts = (((config.get("channels") or {}).get("feishu") or {}).get("accounts") or {})
+        account = accounts.get(account_id) or {}
+        app_id = str(account.get("appId") or "").strip()
+        app_secret = str(account.get("appSecret") or "").strip()
+        if app_id and app_secret:
+            return {"app_id": app_id, "app_secret": app_secret}
+
+    app_id = str(os.getenv("FEISHU_APP_ID") or "").strip()
+    app_secret = str(os.getenv("FEISHU_APP_SECRET") or "").strip()
+    if app_id and app_secret:
+        return {"app_id": app_id, "app_secret": app_secret}
+
+    raise RuntimeError(
+        f"Missing Feishu account credentials for accountId={account_id}. "
+        "Provide ~/.openclaw/openclaw.json or set FEISHU_APP_ID and FEISHU_APP_SECRET."
+    )
 
 
 def fetch_tenant_access_token(app_id: str, app_secret: str) -> str:
