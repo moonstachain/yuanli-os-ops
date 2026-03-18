@@ -1,0 +1,21 @@
+[
+  {
+    "Audit Run ID": "diag-apply",
+    "审计日期": "2026-03-16",
+    "审计范围": "FORCE-CLAW + ~/.codex/skills + AI大管家历史行为",
+    "时间边界": "2026-03-13 本地可检索快照",
+    "mode": "full",
+    "内部权重": "0.7",
+    "外部权重": "0.3",
+    "内部总分": "7.0",
+    "外部总分": "8.9",
+    "综合分": "7.7",
+    "等级": "B",
+    "最强区块": "原力OS理论与文档层",
+    "最弱区块": "skill 生态层",
+    "当前最大失真": "把“已有很多 skill、很多产物、很多 run”误认成“中层交通已经成熟、系统已经生产化”。",
+    "状态": "applied",
+    "报告路径": "/Users/liming/Documents/codex-ai-gua-jia-01/tmp/external-repos/yuanli-os-ops/FORCE-CLAW/YUANLI_OS_SYSTEM_AUDIT_REPORT.md",
+    "同步结果": "/Users/liming/Documents/codex-ai-gua-jia-01/tmp/external-repos/yuanli-os-ops/output/yuanli-os-feishu-sync/diag-apply/sync-result.json"
+  }
+]
